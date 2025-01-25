@@ -1,17 +1,15 @@
 +++
-draft = "true"
-title = "Module VS Service"
-weight = 45
+title = "Module vs Service"
+weight = 10
 +++
 
 ## Modularité
 
-La modularité est toujours une bonne idée. Pour la mettre en place nous avons deux choix :
+La [modularité]({{< relref "fundamental_principles/modularity/index" >}}) est toujours une bonne idée. Pour la mettre en place nous avons deux choix :
 
 - Créer des librairies (modules) : qui sont directement appelée (in-memory called)
 - Créer des services : qui eux sont appelée via des protocole standardisés (out-of-process). Par exemple, l'approche microservice préférera mettre en application la modularité en utilisant l'approche par services.
 
-C'est pour cette raison, qu'un chapitre est dédié à la [modularité]({{% relref "/modularity/" %}}).
 
 ## Le conditionnement
 
@@ -20,7 +18,7 @@ La **différence** entre un module et un service **réside donc dans le conditio
 - Les modules sont des composants au niveau de la programmation qui encapsulent un morceau de logiciel pour qu'il soit réutilisé par d'autres logiciels via un _in-memory function calls_ (i.e. appel classique d’une fonction). Par exemple, une dépendance Maven.
 - Un microservice est le déploiement d'un logiciel destiné à être utilisé par d'autres logiciels au travers d'un protocole (e.g. http); on parle donc de _out-of-process_.
 
-![module vs service](../images/module_vs_service.png?width=40pc)
+![module vs service](module_vs_service.png)
 
 Comme on le voit ci-dessus :
 

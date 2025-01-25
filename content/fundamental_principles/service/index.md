@@ -1,7 +1,6 @@
 +++
-draft = "true"
-title = "Service (architecture)"
-weight = 40
+title = "Service"
+weight = 70
 +++
 
 > [!ressource] Ressources
@@ -10,7 +9,6 @@ weight = 40
 
 Tout au long des chapitres suivants nous allons parler de _Service_, regardons donc ensemble que signifie ce terme.
 
-## You first need to define what a service is
 [Services in Domain-Driven Design (DDD)](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/)
 > The term service is overloaded and its meaning takes on different shades depending on the context
 
@@ -23,7 +21,7 @@ Un service n'est pas quelque chose de clairement défini. En réalité, ce qu'un
 > [!danger] Définition
 >  Un service est une unité déployable qui accomplit une activité métier ou d'infrastructure
 
-![Service example](../images/service_example.png)
+![Service example](service_example.png)
 
 Dans l'exemple de la vidéo, nous obtenons :
 
@@ -38,24 +36,22 @@ L'une des principales raisons d'utiliser les services comme composants (plutôt 
 
 ## Caractérisiques par architecture
 
-Nous revenons sur les différents nom donnés à un service dans les [archiectures distribuées]({{% relref "../../architecture_style_distribued" %}})
-
 ### Microservices
 
 > Le service se nomme un _microservice_
 
-Caractéristisques :
+Caractéristiques :
 
 - répond à un seul objectif (e.g. Service création de tickets)
 - d'une granularité fine
-- posséde leur propre base de données ([bounded context]({{% relref "bounded_context" %}}))
-- communique fréquement avec les autres (micro)services
+- possède leur propre base de données
+- communique fréquemment avec les autres (micro)services
 
 ### Service-Based
 
 > Le service se nomme un _domain service_
 
-Caractéristisques :
+Caractéristiques :
 
 - contient plusieurs fonctionnalités métiers (e.g. le domaine ticket, le domaine facture, etc ...)
 - d'une granularité gros grain
@@ -66,7 +62,7 @@ Caractéristisques :
 
 > Le service se nomme un _event processor_
 
-Caractéristisques :
+Caractéristiques :
 
 - d'une granularité variante
 - Déclenche et/ou répond à des évènements
@@ -77,9 +73,9 @@ Caractéristisques :
 
 > Le service se nomme une _processing unit_
 
-Caractéristisques :
+Caractéristiques :
 
 - d'une granularité variante
 - Contient un stockage de données in-memory
 - La communication avec la base de données se fait de manière asynchrone
-- Les services se up et se down fréquement ([élasticité]({{% relref "../../characteristics/elasticity.md" %}}) forte)
+- Les services se up et se down fréquemment ([élasticité]({{< relref "software_characteristics/elasticity.md" >}}) forte)
