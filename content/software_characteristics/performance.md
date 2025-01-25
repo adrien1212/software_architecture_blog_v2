@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Performance"
 weight = 60
 +++

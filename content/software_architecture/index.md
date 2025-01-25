@@ -1,10 +1,6 @@
 +++
-archetype = "chapter"
-menuPre = "2. "
 title = "L'architecture Logicielle"
 weight = 20
-addBrBefore = true
-isBoldTitle = true
 +++
 
 > [!ressource] Ressources

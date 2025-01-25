@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Complexité"
 weight = 7
 +++
@@ -18,7 +17,9 @@ La complexité c'est l'ensemble des choses qui rendent la compréhension et la m
 - **Cognitive load**: have to load a lot of information in your mind in order to make a change.
 - **Unknown unknowns**: there's important information you need to know before making a change, but not obvious where to find it, or even that it is needed. 
 
-## Qu'est-ce qui rend un système complexe
-Les dépendances. 
+## Qu'est-ce qui rend un système complexe ? 
+> Les dépendances. 
 
 Lorsque la modification d'une partie du logiciel impacte une autre partie, alors notre système est fortement couplé. Respecter les principes de Couplage et Cohesion peut aider le système à réduire ces dépendances.
+
+La [modularité]({{< relref "fundamental_principles/modularity/index" >}}), le [couplage faible]({{< relref "fundamental_principles/couplage_and_cohesion/index" >}}) sont des "outils" pour nous aider à la réduire

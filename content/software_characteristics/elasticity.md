@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Elasticité"
 weight = 20
 +++
@@ -9,7 +8,7 @@ weight = 20
 
 D'après wikipédia,
 
-> [!danger] Définition
+> [!definition] Définition
 >  L'élasticité (souplesse en français) est le degré auquel un système est capable de s'adapter aux demandes en approvisionnant et désapprovisionnant des ressources de manière automatique, de telle façon à ce que les ressources fournies soient conformes à la demande du système.
 
 L'élasticité permet de saisir les aspects essentiels de l'adaptation, à savoir :
@@ -26,6 +25,6 @@ On veut donc scaler notre système le plus rapidement et avec la meilleure préc
 > - [https://stackoverflow.com/questions/9587919/what-is-the-difference-between-scalability-and-elasticity](https://stackoverflow.com/questions/9587919/what-is-the-difference-between-scalability-and-elasticity)
 > - [Lesson 85 - Defining Scalability and Elasticity ](https://www.youtube.com/watch?v=Em3em-al7vc)
 
-Les deux concepts sont fortements liés. L’élasticité permet d’automatiser le mécanisme de scalabilité des ressources informatique mise à disposition.
+Les deux concepts sont fortement liés. L’élasticité permet d’automatiser le mécanisme de [scalabilité]({{< relref "scalability" >}}) des ressources informatique mise à disposition.
 
 Lorsque la charge augmente, vous augmentez la capacité en ajoutant des ressources et lorsque la demande diminue, vous réduisez la capacité et supprimez les ressources inutiles. Pour ce faire on utilisera souvant le _scale out_.

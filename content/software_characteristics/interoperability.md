@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Interopérabilité"
 weight = 50
 +++

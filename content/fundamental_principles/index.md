@@ -1,8 +1,6 @@
 +++
-archetype = "chapter"
 title = "Concepts fondamentaux"
 weight = 10
-isBoldTitle = true
 +++
 
 Dans ce premier chapitre nous allons voir :

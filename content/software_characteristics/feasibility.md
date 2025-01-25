@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Faisabilité"
 weight = 30
 +++

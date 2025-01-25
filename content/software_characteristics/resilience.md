@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Résilience"
 weight = 70
 +++

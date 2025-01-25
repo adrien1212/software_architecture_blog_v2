@@ -1,10 +1,9 @@
 +++
-draft = "true"
 title = "Définition"
 weight = 1
 +++
 
-> [!danger] Définition
+> [!definition] Définition
 >  Toutes les choses que le logiciel doit faire et qui ne sont pas directement liées à la fonctionnalité métier.
 
 
