@@ -13,7 +13,7 @@ Nous devons mettre en oeuvre le principles [Low Coupling, High Cohesion]({{< rel
 > - [Package by feature, not layer](http://www.javapractices.com/topic/TopicAction.do?Id=205)
 > - [Domain Layer Structure & Skeleton | Clean Architecture & DDD From Scratch Tutorial](https://youtu.be/jnutb5Z4wyg)
 
-Au lieu de packager son application par utilisation (entity, service, repository) il est préférable de l'organisation par logique métier.
+Au lieu de packager son application par utilisation (entity, service, repository) il est préférable de l'organisation par logique métier, ce principe se nomme **Package by feature, not layer**
 
 <div style="display: flex; justify-content: space-between;">
   <div style="text-align: center;">

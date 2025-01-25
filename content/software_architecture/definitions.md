@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Définitions"
 weight = 5
 +++
@@ -10,31 +9,22 @@ weight = 5
 
 Il est très compliqué de donner _une_ définition pour l'architecture logicielle. Ci-dessous voici comment des spécialistes du domaine définissent l'archictecture logicielle. D'autres définitions sont disponibles [ici](https://beza1e1.tuxen.de/definitions_software_architecture.html)
 
-{{% notice style="warning" title= "IEEE 1471-2000" icon=" " %}}
-Software architecture is the fundamental organization of a system, embodied in its components, their
-relationships to each other and the environment, and the principles governing its design and evolution. [^1]
-[^1]: IEEE 1471-2000
-{{% /notice %}}
+> [!definition] IEEE 1471-2000
+> Software architecture is the fundamental organization of a system, embodied in its components, their
+> relationships to each other and the environment, and the principles governing its design and evolution. [^1]
+> [^1]: IEEE 1471-2000
 
-{{% notice style="warning" title= "Grady Booch" icon=" " %}}
-Architecture represents the significant design _decisions_ that shape a system, where significant is measured by cost of change.
-{{% /notice %}}
+> [!definition] Grady Booch
+> Architecture represents the significant design _decisions_ that shape a system, where significant is measured by cost of change.
 
-{{% notice style="warning" title= "Ralph Johnson" icon=" " %}}
-In most successful software projects, the expert developers working on that
-project have a shared understanding of the system design. This shared
-understanding is called “architecture.” This understanding includes _how
-the system is divided into components and how the components interact
-through interfaces_. These components are usually composed of smaller
-components, _but the architecture only includes the components and interfaces that are understood by all the developers_ . . . Architecture is about
-the important stuff. Whatever that is.. [^1]
-[^1]: [https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
-{{% /notice %}}
+> [!definition] Ralph Johnson
+> In most successful software projects, the expert developers working on that project have a shared understanding of the system design. This shared understanding is called “architecture.” This understanding includes _how the system is divided into components and how the components interact through interfaces_. These components are usually composed of smaller components, _but the architecture only includes the components and interfaces that are understood by all the developers_ 
+> Architecture is about the important stuff. Whatever that is.. [^3]
+> [^3]: [https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
-{{% notice style="warning" title= "Philippe Kruchten" icon=" " %}}
-An architecture is the set of significant decisions about the organization of a software system, the selection of structural elements and their interfaces by which the system is composed, together with their behavior as specified in the collaborations among those elements, the composition of these elements into progressively larger subsystems, and the architectural style that guides this organization -- these elements and their interfaces, their collaborations, and their composition.[^1]
-[^1]: Kruchten (2003) The Rational Unified Process: An Introduction
-{{% /notice %}}
+> [!definition] Philippe Kruchten
+> An architecture is the set of significant decisions about the organization of a software system, the selection of structural elements and their interfaces by which the system is composed, together with their behavior as specified in the collaborations among those elements, the composition of these elements into progressively larger subsystems, and the architectural style that guides this organization -- these elements and their interfaces, their collaborations, and their composition.[^4]
+> [^4]: Kruchten (2003) The Rational Unified Process: An Introduction
 
 ## Quoi retenir
 

@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "D'après Jakob Jenkov"
 weight = 30
 +++
@@ -9,4 +8,4 @@ weight = 30
 
 Jakob Jenkov considère que l'Architecture Logicielle se concentre sur la structure entre les composants, tandis que la Conception Logicielle concerne la structure interne d'un composant.
 
-![Jakob Jenkov](../images/jj.png)
+![Jakob Jenkov](jj.png)

@@ -1,11 +1,9 @@
 +++
-draft = "true"
 title = "D'après IEEE"
 weight = 40
 +++
 
 > [!ressource] Ressources
-
 > - [24765-2017 - ISO/IEC/IEEE International Standard - Systems and software engineering--Vocabulary](https://ieeexplore.ieee.org/document/8016712)
 
 L'IEEE nous donne plusieurs définitions qui sont retranscrites ici

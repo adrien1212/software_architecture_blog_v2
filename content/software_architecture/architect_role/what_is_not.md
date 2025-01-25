@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Ce que n'est pas un architecte"
 weight = 45
 +++

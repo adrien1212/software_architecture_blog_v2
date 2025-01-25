@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Voir plusieurs dimensions"
 weight = 50
 +++

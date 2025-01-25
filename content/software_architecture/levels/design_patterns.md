@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Patrons de conception"
 weight = 15
 +++

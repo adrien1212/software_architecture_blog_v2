@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "D'après Grady Booch"
 weight = 20
 +++

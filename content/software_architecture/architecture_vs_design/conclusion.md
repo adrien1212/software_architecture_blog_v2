@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Conclusion"
 weight = 60
 +++
@@ -14,7 +13,7 @@ Le rôle de l'architecture est de **minimiser le coût du changement**.
 - _Pourquoi?_ faire ce choix
 - Se concentre sur les choix stratégiques
 - Language, framework, périmètre, méthodologie de travail, etc
-- E.g. [styles architecturaux]({{% relref "../../architecture_style" %}}), [caractérisitques architecturales]({{% relref "../../characteristics" %}}), etc ...
+- E.g. [styles architecturaux]({{< relref "architecture_style/index" >}}), [caractérisitques architecturales]({{< relref "software_characteristics/index" >}}), etc ...
 
 > Architecture is the part of design that deals with the aspects that are difficult to change such as the technology choices, application/system structure, trade-offs between quality attributes, how and where data is stored, deployment and runtime properties
 
@@ -37,10 +36,10 @@ Et on ne se concentre pas sur les détails sans importance. Par exemple les déc
 
 - Complète l'Architecture Logicelle avec le _Comment?_ implémenter
 - Se concentre sur les contraintes locales
-- E.g. Design Patterns, [SOLID]({{% relref "solid" %}}), etc ...
+- E.g. Design Patterns, [SOLID]({{< relref "fundamental_principles/solid/index" >}}), etc ...
 
 ## Conclusion
 
 Gardez à l'esprit que la frontière est très mince, l'architecture et la conception logicielle sont fortement liées.
 
-![archivsdesign](../images/architecture_vs_design3.png?width=30pc)
+![archivsdesign](architecture_vs_design3.png)

@@ -1,5 +1,4 @@
 +++
-draft = "true"
 title = "Architecture VS Design"
 weight = 10
 +++
