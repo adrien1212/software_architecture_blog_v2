@@ -1,5 +1,5 @@
 +++
-title = "Comment l'achever"
+title = "Package by feature, not layer"
 weight = 10
 +++
 

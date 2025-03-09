@@ -1,6 +1,6 @@
 +++
 title = "Voir plusieurs dimensions"
-weight = 50
+weight = 20
 +++
 
 > [!ressource] Ressources
@@ -8,7 +8,7 @@ weight = 50
 
 Un architecte doit être capable de cerner les différentes questions et problématique qui se cachent derrière un sujet. Pour illustrer, qu'est-ce qui pourrais mal se passer dans l'architecture suivante ?
 
-![what goes wrong](../images/wrong.png)
+![what goes wrong](wrong.png)
 
 La question n'est pas si simple qu'elle laisse paraître. En effet cette question en cache plusieurs autres :
 - Premièrement, *comment fonctionne le système ?* (appel de méthode, point-to-point, synchrone/asynchrone, etc ...) suivant la réponse les problématiques seront différentes
@@ -17,6 +17,6 @@ La question n'est pas si simple qu'elle laisse paraître. En effet cette questio
 
 On remarque bien qu'il y a différents sujets à aborder derrière cette question qui semblait simpliste. En tant qu'architecte on a besoin de comprendre l'ensemble de ces considération lorsqu'il dessine cette ligne.
 
-![architect dimension](../images/architect_dimension.png)
+![architect dimension](architect_dimension.png)
 
 L'équipe de développement est très contente du choix technologique MAIS les implications de ce choix sont un peu flous dans leur esprit. L'architecte est donc là pour analyser un ensemble de facteurs et d'en étudier des compromis.

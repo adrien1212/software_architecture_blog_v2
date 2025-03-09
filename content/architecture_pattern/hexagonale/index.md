@@ -11,6 +11,7 @@ weight = 10
 > - [https://hexagonalarchitecture.org/](https://hexagonalarchitecture.org/)
 > - [Hexagonal Architecture ( Ports & Adapters )The 2023 version](https://alistaircockburn.com/Hexagonal%20Budapest%2023-05-18.pdf)
 > - [Hexagonal Architecture Example: digging a Spring Boot implementation](https://beyondxscratch.com/2020/08/23/hexagonal-architecture-example-digging-a-spring-boot-implementation/)
+> - [About the cake](https://theannotatedhexagon.substack.com/p/about-the-cake) Très très bonne introduction !!
 
 Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases.
 

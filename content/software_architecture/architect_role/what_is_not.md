@@ -1,6 +1,6 @@
 +++
 title = "Ce que n'est pas un architecte"
-weight = 45
+weight = 10
 +++
 
 > [!ressource] Ressources

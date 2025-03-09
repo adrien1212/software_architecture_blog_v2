@@ -9,6 +9,8 @@ alwaysopen = false
 > [!ressource] Ressources
 > - [Layered Architecture, de 1960 à Aujourd'hui](https://herbertograca.com/2017/08/03/layered-architecture/)  
 > - [Reevaluating the Layered Architecture](https://javadevguy.wordpress.com/2019/01/06/reevaluating-the-layered-architecture/)
+> - [How to Differentiate Business and Service Layers in Layered Architecture](https://levelup.gitconnected.com/how-to-differentiate-business-and-service-layers-in-layered-architecture-912123b2ccf1) Très intéressant !!
+> - [Application Architecture Guide - Chapter 9 - Layers and Tiers](https://guidanceshare.com/wiki/Application_Architecture_Guide_-_Chapter_9_-_Layers_and_Tiers)
 
 ## Objectif du découpage
 

@@ -1,6 +1,5 @@
 +++
-draft = "true"
-title = "Patron Adaptater"
+title = "Adapter"
 weight = 20
 +++
 
