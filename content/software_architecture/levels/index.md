@@ -6,6 +6,7 @@ weight = 30
 > [!ressource] Ressources
 > - [Architecture Styles VS Architecture Patterns - Mark Richards](https://youtu.be/I-yBv72RCeA?t=30)  
 > - [Architectural Styles vs. Architectural Patterns vs. Design Patterns](https://herbertograca.com/2017/07/28/architectural-styles-vs-architectural-patterns-vs-design-patterns/)
+> - [Chapter 3: Architectural Patterns and Styles (Microsoft)](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658117(v=pandp.10))
 
 Tout est question de champ d'application :
 

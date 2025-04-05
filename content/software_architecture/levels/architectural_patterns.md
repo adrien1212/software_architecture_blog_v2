@@ -13,7 +13,6 @@ Les Patrons Architecturaux (_Architectural Patterns_) sont des conceptions de ni
 
 Exemples de Styles Architecturaux :
 
-- Three-tier
 - Model-View-Controller
 - Model-View-ViewModel
 - Publish-Subscriber

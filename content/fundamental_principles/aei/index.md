@@ -22,6 +22,7 @@ Par exemple, en utilisant les classes (POO), nous mettons en œuvre simultanéme
 - masquage : cache les données (e.g. `private` et `public` mot-clés)
 - encapsulation : regroupe à un même endroit toutes les données (attributs) et les comportements (méthodes) associés
 
+<!-- 
 ## Informations complémentaires
 Un [Anemic Domain Model](https://en.wikipedia.org/wiki/Anemic_domain_model) est décrit comme un anti-pattern de programmation où les objets du domaine contiennent peu ou pas de logique métier, comme des validations, des calculs, des règles. En d'autres termes, ce sont des classes qui ne contiennent que des getters et setters.
 
@@ -31,3 +32,4 @@ En utilisant un modèle de domaine anémique nous avant une
 
 - Les objets de domaine ne contiennent pas leur propre logique métier, ce qui signifie que leur comportement n'est pas cohérent avec leur état. Cela entraîne une séparation artificielle entre les données (domaines) et les règles métier (souvent déplacées dans des classes "services")
     > Needs a separate business layer to contain the logic otherwise located in a domain model. It also means that domain model's objects cannot guarantee their correctness at any moment, because their validation and mutation logic is placed somewhere outside (most likely in multiple places).
+-->

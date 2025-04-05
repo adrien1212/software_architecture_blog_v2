@@ -1,10 +1,13 @@
 +++
 draft = "true"
-title = "Architecture Sinkhole"
+title = "Architecture Sinkhole/Lasagne"
 weight = 30
 +++
 
-## Sinkhole anti-pattern
+> [Lasagna code - too many layers?](https://matthiasnoback.nl/2018/02/lasagna-code-too-many-layers/)
+> [Layered Architecture - Dernière section](https://herbertograca.com/2017/08/03/layered-architecture/)
+
+## Sinkhole/Lasagne anti-pattern
 
 Cette anti-pattern est fortement lié à [l'architecture Layered]({{% relref "/architecture_style_monolithic/layered" %}}). En effet, le principal risque dans architecture s'est de permettre à une requête traverse toutes les couches sans qu'aucune business logic n'ait été appliquée.
 
