@@ -1,11 +1,12 @@
 +++
-title = "Anemic Model"
+title = "Anemic Domain Model"
 weight = 10
 +++
 
 > [!ressource] Ressources
 > - [Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html)
 > - [Reevaluating the Layered Architecture](https://javadevguy.wordpress.com/2019/01/06/reevaluating-the-layered-architecture/)
+> - [The Biggest Flaw of Spring Web Applications](https://www.petrikainulainen.net/software-development/design/the-biggest-flaw-of-spring-web-applications/)
 
 ## Définition
 
@@ -24,6 +25,8 @@ Les objets ne contiennent plus les règles permettant de garantir un état cohé
 
 ### Violation du principe d'encapsulation
 > Violation of the [encapsulation]({{< relref "fundamental_principles/aei/index" >}}) and information hiding principles [^1]
+
+La structure des données et la logique métier (*behavior*) doivent vitre dans la même classe.
 
 ## Quand le retrouve-t-on ?
 Une mauvaise structure de la Layered Architecture peut conduire à cet anti-pattern. Je vous recommande lire [The Biggest Flaw of Spring Web Applications](https://www.petrikainulainen.net/software-development/design/the-biggest-flaw-of-spring-web-applications/) qui présente comment des applications Spring peuvent rapidement être mal conçue avec des classe `xService` qui contiennent la logique métier et le `Model` de donnée qui ne contient que des getters et setters
