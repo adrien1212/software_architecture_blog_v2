@@ -13,6 +13,10 @@ weight = 10
 > - [Lesson 159 - Modular Monolith Architecture](https://youtu.be/ikuu3QIuJuc)
 > - [Modular Monoliths • Simon Brown • GOTO 2018](https://youtu.be/5OjqD-ow8GE)
 > - [Are Modular Monoliths a Winner?](https://hexmaster.nl/posts/are-modular-monoliths-a-winner/)
+>
+> - [Un excellent talk qui revient sur bcp bcp de principe + code](https://youtu.be/nuHMlA3iLjY)
+>   - Est-ce que le moduleA peut accéder au @Repository du module B et pourquoi ?
+>   - Gérer relation cyclique entre Service/Module
 
 Intermédiaire entre une architecture monolithe et une architecture microservice, la *Modular Monolithe* (ou Modulithe) doit être un intermédiaire à considérer.
 

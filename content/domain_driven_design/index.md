@@ -16,4 +16,4 @@ isBoldTitle = true
 > - [Domain-Driven Hexagon (github)](https://github.com/Sairyss/domain-driven-hexagon?tab=readme-ov-file#application-services)
 > - [Modular-monolith-with-ddd (github)](https://github.com/kgrzybek/modular-monolith-with-ddd)
 
-![Alt text](images/map.png)
+![mindmap](domain_driven_design/images/mindmap.png)
