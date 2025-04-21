@@ -37,3 +37,9 @@ by more than one microservice.
 Nous pouvons concevoir nos microservices en nous appuyant sur les sous-domaine
 
 ![alt text](subdomain_microservices.png)
+
+> A more balanced heuristic for designing microservices is to align the services with the boundaries of business subdomains.
+> - From a business domain perspective, subdomains describe the capabilities—what the business does—without explaining how the capabilities are implemented. 
+> - From a technical standpoint, subdomains represent sets of coherent use cases: using the same model of the business domain, working on the same or closely related data, and having a strong functional relationship.[^1]
+
+[^1]: Learning Domain Driven Design p228
