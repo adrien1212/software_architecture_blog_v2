@@ -1,6 +1,6 @@
 +++
 title = "Se center sur le domaine"
-weigh = 15
+weight = 15
 +++
 
 Dans la section précédente [inconvenients]({{< relref "inconvenients" >}}) nous avons vu que l'architecture en couche classique présente des inconvénients. Les patrons architecturaux *Clean Architecture*, *Hexagonale Architecture* et *Onion Architecture* présentent des caractéristiques communes
