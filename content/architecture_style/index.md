@@ -1,10 +1,6 @@
 +++
-archetype = "chapter"
-menuPre = "6. "
 title = "Styles Architecturaux"
-weight = 60
-addBrBefore = true
-isBoldTitle = true
+weight = 50
 +++
 
 > [!ressource] Ressources
@@ -23,24 +19,23 @@ Les styles d'architecture peuvent être classés en deux types principaux : _mon
 ### Monolithique
 
 > [!danger] Définition
->  An architecture is monolithic when all the code is a single unit of deployment.
+>  An [architecture is monolithic]({{< relref "monolithic" >}}) when all the code is a single unit of deployment.
 
-- Layered architecture
+- [Layered architecture]({{< relref "layered_architecture/index" >}})
 - Pipeline architecture
 - Microkernel architecture
 
 ### Distribuée
 
 > [!danger] Définition
->  A distributed architecture is a group of deployment units connected through remote access protocols.
+>  A [distributed architecture]({{< relref "distributed" >}}) is a group of deployment units connected through remote access protocols.
 
-- Service-based architectur
+- Service-based architecture
 - Event-driven architecture
 - Space-based architecture
 - Service-oriented architecture
 - Microservices architecture
 
-{{% notice info %}}
-Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles onolithique
-{{% /notice %}}
+> [!info] Note
+> Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles monolithique
 

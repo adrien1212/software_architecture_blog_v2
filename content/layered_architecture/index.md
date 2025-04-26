@@ -1,12 +1,15 @@
 +++
 title = "Layered Architecture (Couches)"
-weight = 50
+weight = 60
 +++
 
 > [!ressource] Ressources
 > - [Chapitre 9 à 12 - Application Architecture Guide](https://guidanceshare.com/wiki/Application_Architecture_Guide)
 
 L'architecture en couches (*Layered Architecture*) est l'un des styles architectural les plus populaires. L'article suivant [Reevaluating the Layered Architecture](https://javadevguy.wordpress.com/2019/01/06/reevaluating-the-layered-architecture/) présente pourquoi ce style c'est largement imposé dans le monde logiciel.
+
+> [!definition] Définition
+> The idea behind Layered Architecture is that modules or components with similar functionalities are organized into horizontal layers. As a result, each layer performs a specific role within the application[^2]
 
 ## Topologie
 Dans le style d'architecture en couches, les composants sont organisés en *couches techniques* (en opposition au *domain-partitioned* architecture), chaque couche jouant un rôle spécifique au sein de l'application. Malgré que le nombre de couches peut varier, la majorité des architectures sont composées de quatre couches :
@@ -35,7 +38,6 @@ En ayant des couches indépendantes, si on souhaite remplacer une technologie su
 
 ![](https://guidanceshare.com/images/4/4b/NTier.PNG)
 
-[^1]: https://guidanceshare.com/wiki/Application_Architecture_Guide_-_Chapter_9_-_Layers_and_Tiers
 
 ## Ce que n'est pas une architecture en couche
 ### Couches métiers
@@ -43,3 +45,5 @@ En début de page nous avons souligné le fait que les composants sont organisé
 
 Par conséquent, une approche *Domain Driven* n’est pas des plus compatible avec le style architectural Layered. Une variante consiste à retravailler l'architecture en couches vers une *Vertical Slice Architecture*
 
+[^1]: https://guidanceshare.com/wiki/Application_Architecture_Guide_-_Chapter_9_-_Layers_and_Tiers
+[^2]: https://cs.uwaterloo.ca/%7Em2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf

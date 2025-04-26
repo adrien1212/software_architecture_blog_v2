@@ -25,7 +25,7 @@ Ceci nous permet rebondir sur l'importance de la [structure organisationnelle]({
 
 
 ## Axes d'amélioration
-Ce qui nous amène à plusieurs pattrons architecturaux
+Ce qui nous amène à plusieurs patrons architecturaux
 - Onion Architecture
 - Hexagonale Architecture
 - Clean Architecture
