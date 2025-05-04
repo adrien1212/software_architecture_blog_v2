@@ -20,6 +20,9 @@ Dans le style d'architecture en couches, les composants sont organisés en *couc
 ![Layered Architecture](layered_architecture.png)
 
 ### Separation of Concern
+> The primary advantages of this architecture are isolation and separation of concerns. Each layer is isolated from the others, accessible via a well-defined interface. This allows for implementation changes within the layer without
+affecting the other layers[^3]
+
 L'architecture en couches respectent le principe de [Separation of Concern]({{< relref "fundamental_principles/separation_of_concern/" >}}) en rendant chaque couche responsable. Les composants au sein d'une couche spécifique ont un périmètre limité, ne traitant que la logique qui se rapporte à cette couche.
 Par exemple, les composants de la couche de présentation ne traitent que la logique de présentation, tandis que les composants résidant dans la couche métier ne traitent que la logique métier.
 
@@ -47,3 +50,4 @@ Par conséquent, une approche *Domain Driven* n’est pas des plus compatible av
 
 [^1]: https://guidanceshare.com/wiki/Application_Architecture_Guide_-_Chapter_9_-_Layers_and_Tiers
 [^2]: https://cs.uwaterloo.ca/%7Em2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf
+[^3]: Building Evolutionary Architecture p55

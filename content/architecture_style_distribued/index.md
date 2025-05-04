@@ -2,7 +2,7 @@
 menuPre = " - 6.2 "
 linkTitle = "Distribuées"
 title = "Architectures Distribuées"
-weight = 62
+weight = 79
 +++
 
 > [!danger] Définition

@@ -2,7 +2,7 @@
 menuPre = " - 6.1 "
 linkTitle = "Monolithiques"
 title = "Architectures Monolithiques"
-weight = 61
+weight = 79
 +++
 
 > [!danger] Définition

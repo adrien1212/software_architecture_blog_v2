@@ -24,6 +24,7 @@ Les styles d'architecture peuvent être classés en deux types principaux : _mon
 - [Layered architecture]({{< relref "layered_architecture/index" >}})
 - Pipeline architecture
 - Microkernel architecture
+- [Modular Monolith]({{< relref "modular_monolith/index" >}})
 
 ### Distribuée
 

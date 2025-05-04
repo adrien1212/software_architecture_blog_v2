@@ -1,5 +1,5 @@
 +++
-draft = "true"
+draft = true
 title = "Pourquoi ?"
 weight = 10
 +++
@@ -30,9 +30,8 @@ L'architecture *Modular Monilithe* propose de garder la simplicité d'un déploi
 
 ### Monolithe vers Modular Monolithe
 
-{{% notice style="note" title= "" icon="" %}}
-Qu'on souhaite réaliser du Microservice ou du Modular Monolithe la première étape consiste à bien définir les Bounded Context. Si cette étape est mal réalisé nous obtiendrons un "Distribued Monolith"
-{{% /notice %}}
+> [!note] Note
+> Qu'on souhaite réaliser du Microservice ou du Modular Monolithe la première étape consiste à bien définir les Bounded Context. Si cette étape est mal réalisé nous obtiendrons un "Distribued Monolith"
 
 - En suivant une approche DDD on identifie les Bounded Context  
 

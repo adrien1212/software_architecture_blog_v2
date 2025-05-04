@@ -64,7 +64,7 @@ Un module est donc un concept qui [abstrait]({{< relref "abstraction" >}}) notre
 
 > The crucial aspect of modularity is concept of 'interchangeability'. If you can replace one component of your design with another component without changing anything else, we can say there is a high degree of modularity with that aspect of the design.
 
-Dans la section [Caractéristiques d'un module]({{< relref "fundamental_principles/modularity/characteristics" >}}) nous venons comment implémenter ces caractéristiques dans nos solutions
+Dans la section [Caractéristiques d'un module]({{< relref "fundamental_principles/modularity/characteristics" >}}) nous verrons comment implémenter ces caractéristiques dans nos solutions
 
 
 ## Lien avec l’architecture logicielle

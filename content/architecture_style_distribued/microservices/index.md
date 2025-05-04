@@ -10,6 +10,9 @@ alwaysopen = false
 > - [https://microservices.io/patterns/](https://microservices.io/patterns/)
 > - [https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices)
 
+
+> If you can't build a monolith, what makes you think microservices are the answer ? - Simon Brown
+
 Créée en 2011 et popularisée par Martin Fowler et James Lewis dans [leur article "Microservice"](https://martinfowler.com/articles/microservices.html)
 elle a qui a connu une popularité croissante et rapide au cours des dernières années.
 
