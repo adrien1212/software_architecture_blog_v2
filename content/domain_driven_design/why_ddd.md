@@ -15,7 +15,7 @@ La valeur d’un logiciel réside dans la Business Logic qu’il fournit à ses 
 
 Aujourd’hui, de nombreux logiciels sont développés en suivant une approche [Anemic Domain Model]({{< relref "commun_antipattern/anemic_model/" >}}). Cela aboutit à un code difficile à comprendre et à maintenir, car :
 - **Le code ne reflète pas l’intention métier.**
-Par exemple, au lieu d’avoir une méthode explicite comme `Account.open()` pour ouvrir un compte, on retrouve souvent du code fragmenté avec getter/setter comme
+Par exemple, au lieu d’avoir une méthode explicite comme `Account.open()` pour ouvrir un compte, on retrouve souvent du code fragmenté avec getter/setter comme :
 ```java
 public void createAccount(AccountDTO accountDTO) {
     Account account = new Account();
@@ -27,7 +27,7 @@ public void createAccount(AccountDTO accountDTO) {
 ```
 
 - **La logique métier est dispersée entre plusieurs classes.**
-Les règles de validation, les calculs ou les contrôles d’invariants sont souvent externalisés dans des services utilitaires ou des contrôleurs. Par exemple, le contrôle d’un solde suffisant avant un retrait peut se retrouver dans un `AccountService`
+Les règles de validation, les calculs ou les contrôles d’invariants sont souvent externalisés dans des services utilitaires ou des contrôleurs. Par exemple, le contrôle d’un solde suffisant avant un retrait peut se retrouver dans un `AccountService` :
 ```java
 if (account.getBalance() >= amount) {
     account.setBalance(account.getBalance() - amount);
@@ -36,7 +36,7 @@ if (account.getBalance() >= amount) {
 }
 ```
 
-En DDD, on préférera encapsuler cette logique directement dans l'entité `Account` et créer une méthode qui représente le métier
+En DDD, on préférera encapsuler cette logique directement dans l'entité `Account` et créer une méthode qui représente le métier :
 ```java
 public void withdraw(Money amount) {
     if (!canWithdraw(amount)) {

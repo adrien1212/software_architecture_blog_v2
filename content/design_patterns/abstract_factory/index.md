@@ -4,7 +4,7 @@ weight = 30
 +++
 
 ## Comprendre Abstract Factory avec un exemple
-*Factory* signifie fabriquer, créer un objet. Les patrons employant le terme *Factory* permettent de créer de nouveau objet sans exposer la logique d'instanciation (i.e l'appel à `new`). Commençons donc par illustrer ceci, nous souhaitons créer des animaux. 
+*Factory* signifie fabriquer, créer un objet. Les patrons employant le terme *Factory* permettent de créer de nouveaux objets sans exposer la logique d'instanciation (i.e l'appel à `new`). Commençons donc par illustrer ceci, nous souhaitons créer des animaux. 
 
 ![factory simple](factory_simple.png)
 
@@ -31,7 +31,7 @@ Pour ces deux raisons, le diagramme de classe ci-dessus n'est pas satisfaisant. 
 ![alt text](sauvage_domestique.png)
 
 Puis comment, pouvons nous fabriquer ces différents objets ?
-- pour chaque *variante de produit* (e.i Chien et Tigre) définir une factory
+- pour chaque *variante de produit* (i.e Chien et Tigre) définir une factory
 
 ![abs factory animal](abs_factory_animal.png)
 
@@ -62,7 +62,7 @@ main() {
 ```
 Le client peut travailler avec n’importe quelle variante de fabrique ou produit, tant qu’il interagit avec les interfaces abstraites.
 - Le client n'a pas à se préoccuper du type concret qui est choisi à l'exécution
-- Il se concentre sur le comportement à apporter, ici `chasser()` quelque soit le type concret de l'animal
+- Il se concentre sur le comportement à apporter, ici `chasser()` quel que soit le type concret de l'animal
 
 ### Open/Close Principle
 Maintenant, nous pouvons ajouter de nouvelles *variantes de produits* (e.g. Chat) sans endommager l’existant.
@@ -84,9 +84,9 @@ C'est bien le cas dans l'exemple précédent :
 
 ### Créer des objets complexes
 > [!affirmation] Affirmation
-> Les patrons Factory nous aide à construire des objects complexes sans que le client n'est à se préoccuper des détails
+> Les patrons Factory nous aident à construire des objets complexes sans que le client n'ait à se préoccuper des détails
 
-Notre exemple avec les animaux est très simpliste, mais le patron factory joue un rôle très important lorsque la construction des objets est complexes (pas un simple constructeur). Nous y reviendrons lorsque nous aborderons le *patron Abstract Factory avec JDBC*
+Notre exemple avec les animaux est très simpliste, mais le patron factory joue un rôle très important lorsque la construction des objets est complexe (pas un simple constructeur). Nous y reviendrons lorsque nous aborderons le *patron Abstract Factory avec JDBC*
 
 ### Définition
 > [!définition] Définition
@@ -94,13 +94,13 @@ Notre exemple avec les animaux est très simpliste, mais le patron factory joue 
 > 2. Elle fournit une interface pour créer des familles d'objets (e.g. domestique/sauvage) liés ou inter-dépendants sans avoir à préciser au moment de leur création la classe concrète à utiliser.
 
 ## Real-world example : API JDBC et Abstract Factory
-Nous avons défini la patron Abstract Factory mais nous ne voyez peut-être l’intérêt concret. Nous allons repartir de l'exemple JDBC qui utilise derrière ce patron de conception. 
+Nous avons défini le patron Abstract Factory mais nous ne voyez peut-être pas l’intérêt concret. Nous allons repartir de l'exemple JDBC qui utilise derrière ce patron de conception. 
 
 JDBC nous permet d’interagir avec la base de données, dont voici un bref exemple
 ```java
 Connection connection = DriverManager.getConnection(url); // initialiser la connexion
 Statement statement = connection.createStatement();       // préparer un objet statement
-ResultSet resultSet = statement.executeQuery("SELECT * FROM t_article");  // qui est utilisé pour exécuté une requête SQL
+ResultSet resultSet = statement.executeQuery("SELECT * FROM t_article");  // qui est utilisé pour exécuter une requête SQL
 ```
 
 ### Pourquoi pattern Abstract Factory
@@ -108,10 +108,10 @@ Lorsque vous écrivez le code ci-dessus, vous n'avez pas à vous préoccuper du 
 - --> isoler la création des objets de leur utilisation
 
 Ensuite, vous n'avez pas à vous soucier de comment est créer l'object `Connection`, `Statement` ou encore `ResultSet`
-- --> construire des objects complexes sans que le client n'est à se préoccuper des détails
+- --> construire des objets complexes sans que le client n'ait à se préoccuper des détails
 
 ### Créer un framework
-Ensuite, l'API JDBC définie que les interfaces, si vous n'importez pas une dépendance Maven comme MySQL ou Postgres alors le code ci-dessus ne se lancera pas.
+Ensuite, l'API JDBC ne définit que les interfaces, si vous n'importez pas une dépendance Maven comme MySQL ou Postgres alors le code ci-dessus ne se lancera pas.
 
 Par conséquent, le patron Abstract Factory nous permet de définir le contrat d'un framework et chaque fournisseur de SGBD implémente sa propre "Factory" concrète.[^3]
 

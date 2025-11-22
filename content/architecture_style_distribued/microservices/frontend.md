@@ -4,7 +4,7 @@ title = "Front End"
 weight = 25
 +++
 
-Dans la version initiale de l'architecture microservices la couche de présentation était inclus dans les [Bounded Context]({{% relref "../../basics_for_modeling/bounded_context/" %}}), mais cette approche rendait l'architecture compliquée. Ainsi deux solutions ont émergé :
+Dans la version initiale de l'architecture microservices la couche de présentation était incluse dans les [Bounded Context]({{% relref "../../basics_for_modeling/bounded_context/" %}}), mais cette approche rendait l'architecture compliquée. Ainsi deux solutions ont émergé :
 - Une architecture microservices avec une interface utilisateur monolithique
 - Une architecture microservices avec une interface utilisateur *microfrontend*
 
@@ -14,7 +14,7 @@ une interface utilisateur unique qui fait appel à la couche API pour répondre 
 ![monolithic ui](../images/monolithic_ui.png?width=35pc)
 
 ## Microfrontend user interface
-En utilisant ce modèle, les équipes peuvent isoler les limites des services depuis l'interface utilisateur jusqu'aux services backend. Ainsi une équipe de développement peut faire l'ensemble sur service de A (frontend) à Z (backend).
+En utilisant ce modèle, les équipes peuvent isoler les limites des services depuis l'interface utilisateur jusqu'aux services backend. Ainsi une équipe de développement peut faire l'ensemble du service de A (frontend) à Z (backend).
 
 Les développeurs peuvent mettre en œuvre le modèle de microfrontend de différentes manières, par exemple en utilisant du React.
 

@@ -10,9 +10,9 @@ weight = 50
 > [!warning] Note
 > It’s crucial to remember that subdomains are discovered and bounded contexts are designed.
 
-Il faut se rappeler que les sous-domaine est une partie du métier de l'organisation et existe naturellement dans l'organisation indépendamment de la modélisation logiciel. Il en existe trois types *Core* qui représente notre valeur ajoutée, *Supporting* qui soutient le core mais sans y apporter un avantage compétitif et finalement *Generic* qui correspond à des solutions que tout le monde utilise (e.g. Keycloack pour l'authentification)
+Il faut se rappeler que les sous-domaines sont une partie du métier de l'organisation et existent naturellement dans l'organisation indépendamment de la modélisation logicielle. Il en existe trois types *Core* qui représente notre valeur ajoutée, *Supporting* qui soutient le core mais sans y apporter un avantage compétitif et finalement *Generic* qui correspond à des solutions que tout le monde utilise (e.g. Keycloak pour l'authentification)
 
-Tandis que les *Bounded Context* c'est une solution technique et architecturale qui encapsule un modèle cohérent où l'on parte le même Ubiquitous Language, ses propres entités et règles métiers. Chaque BC est un service/projet qui peut être implémenté, versionné et évolué indépendamment des autres BC
+Tandis que les *Bounded Context* sont une solution technique et architecturale qui encapsule un modèle cohérent où l'on partage le même Ubiquitous Language, ses propres entités et règles métiers. Chaque BC est un service/projet qui peut être implémenté, versionné et évolué indépendamment des autres BC
 
 ## Relations entre les deux
 - Idéalement, on vise une relation 1:1 entre sous-domaines et bounded contexts

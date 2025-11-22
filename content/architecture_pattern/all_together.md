@@ -1,6 +1,6 @@
 +++
 draft = "true"
-title = "All Archiectures Together"
+title = "All Architectures Together"
 weight = 99
 +++
 

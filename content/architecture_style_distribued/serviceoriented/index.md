@@ -11,9 +11,9 @@ alwaysopen = false
 
 ## Pourquoi SOA
 
-Dans le chapitre dédié aux [architectures monolithiques]({{% relref "architecture_style_monolithic/_index.md" %}}) nous évoquions le fait que ces dernière ne peuvent rien partager au monde extérieur. L'architecture SOA vient répondre à cette problématique (via une API). Les services vont donc exposer des _métadata_ pour décrire leurs fonctionnalités (SOAP ou WSDL)
+Dans le chapitre dédié aux [architectures monolithiques]({{% relref "architecture_style_monolithic/_index.md" %}}) nous évoquions le fait que ces dernières ne peuvent rien partager au monde extérieur. L'architecture SOA vient répondre à cette problématique (via une API). Les services vont donc exposer des _métadata_ pour décrire leurs fonctionnalités (SOAP ou WSDL)
 
-Cette vision est apparue dans les années 1990 avec la concurrence des marchés les entreprises devaient devenir de plus en plus compétitives. Il fallait pouvoir intégrer facilement nouveaux métiers dans les SI des entreprises. De plus avec l'approche monolithique si l'un des éléments de l'application ne fonctionnait pas correctement, il fallait mettre hors ligne l'application entière pour résoudre le problème avant de déployer une autre version.
+Cette vision est apparue dans les années 1990 avec la concurrence des marchés les entreprises devaient devenir de plus en plus compétitives. Il fallait pouvoir intégrer facilement de nouveaux métiers dans les SI des entreprises. De plus avec l'approche monolithique si l'un des éléments de l'application ne fonctionnait pas correctement, il fallait mettre hors ligne l'application entière pour résoudre le problème avant de déployer une autre version.
 
 SOA fournit un framework permettant d'avoir :
 
@@ -24,8 +24,8 @@ SOA fournit un framework permettant d'avoir :
 Pour ce faire, une architecture SOA doit répondre au caractéristiques suivantes :
 
 - n'a pas de langage spécifique de transport et de système d'exploitation. Doit être pris en charge par des normes ouvertes (SOAP, WSDL, etc ...).
-- aucun activité humaine n'est impliqué lors de l'exécution
-- application peut être divisée en "fragments de processus d'affaires" (i.e. services). Où chaque service expose une interface bien définie accessible via le réseaux.
+- aucune activité humaine n'est impliquée lors de l'exécution
+- application peut être divisée en "fragments de processus d'affaires" (i.e. services). Où chaque service expose une interface bien définie accessible via le réseau.
 
 ![Histoire SOA](images/histoire.png)
 

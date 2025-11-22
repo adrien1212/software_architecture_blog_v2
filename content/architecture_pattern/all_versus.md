@@ -1,6 +1,6 @@
 +++
 draft = "true"
-title = "All Archiectures Versus"
+title = "All Architectures Versus"
 weight = 98
 +++
 
@@ -18,7 +18,7 @@ Mais que se passe-t-il si nous décidons d'inverser la dépendance entre la Logi
 ![layered with DI](../images/layered_di.png?width=30pc)
 
 - La partie Business appelle toujours la couche Data Access
-- Mais ne la connait plus qui est appelé (fichier, base de données, in-memory, ?), elle partie métier devient indépendante 
+- Mais ne sait plus qui est appelé (fichier, base de données, in-memory, ?), la partie métier devient indépendante 
 
 ### Comment ?
 
@@ -26,7 +26,7 @@ Mais que se passe-t-il si nous décidons d'inverser la dépendance entre la Logi
 
 Pour ce faire :
 - la partie Business (`Service`) dépend d'une interface (`IRepository`) qui est implémenté par la couche de Persistance (`Repository`)
-- Et c'est en positionnant `IRepository` dans Business (et non dans Data Access) nous inversions la dépendance
+- Et c'est en positionnant `IRepository` dans Business (et non dans Data Access) que nous inversons la dépendance
   ![Si repository](../images/di_irepo.png?width=30pc)
 
 {{% notice style="note" title="Conséquence" icon=" " %}}
@@ -45,7 +45,7 @@ Nous avons la naissance du patron architectural Port/Adapter (ou Hexagonale). En
 Par conséquent, le **coeur applicatif n'a aucune dépendance**; aucune référence vers le monde externe
 
 ## Onion
-Le coeur applicatif peut lui être divisé en différente couche (layers) avec des dépendances qui ne pointent que vers l'intérieur
+Le coeur applicatif peut lui être divisé en différentes couches (layers) avec des dépendances qui ne pointent que vers l'intérieur
 
 ![Onion](../images/onion.png?width=30pc)
 

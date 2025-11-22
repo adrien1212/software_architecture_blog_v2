@@ -6,7 +6,7 @@ weight = 2
 
 ![Alt text](../images/hexa5.png)
 
-## Communication entrante code
+## Code de communication entrante
 ```java
 /* Port entrant */
 public interface IService {
@@ -24,7 +24,7 @@ public class Controler {
 }
 ```
 
-## Communication sortante code
+## Code de communication sortante
 ```java
 /* Port sortant */
 public interface IRepository {
@@ -34,7 +34,7 @@ public interface IRepository {
 
 ```java
 /* Adaptateur */
-public class RepositoryAdapteur {
+public class RepositoryAdaptateur {
     public void create(UserRepoDTO dto) {
         UserJPAEntity jpaEntity = UserJPAEntity(dto.nom, dto.email, dto.mdp, dto.dateDuJour)
         postgresRepository.save(jpaEntity)

@@ -11,7 +11,7 @@ weigth = 10
 
 - Parallélisme : dans certains cas, les filtres peuvent être exécutés en parallèle, ce qui améliore les performances, en particulier dans les systèmes multicœurs.
 
-- Lisibilité et maintenabilité : La structure du pipeline permet souvent d'obtenir un code plus et organisé, ce qui facilite sa compréhension et sa maintenance.
+- Lisibilité et maintenabilité : La structure du pipeline permet souvent d'obtenir un code plus propre et organisé, ce qui facilite sa compréhension et sa maintenance.
 
 ## Inconvénients
 On reste sur une architecture monolithique avec ses [inconvénients]({{% relref "../../architecture_style_monolithic/" %}})

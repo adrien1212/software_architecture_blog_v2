@@ -22,7 +22,7 @@ En d'autres termes, le `Presenter` _adapte_ l'interface de la couche métier pou
 
 De manière similaire le Controller fonctionne de la même manière mais pour l'autre sens.
 
-- L'interface `Input Port` fournie les méthodes qui devront être implémentées par un `UseCase Interactor` spécifique
+- L'interface `Input Port` fournit les méthodes qui devront être implémentées par un `UseCase Interactor` spécifique
 - Le `Controller` pourra appeler ces méthodes pour effectuer une action de la couche métier
 
 En d'autres termes, le `Controller` adapte l'entrée de l'API en un format compris par la couche métier.

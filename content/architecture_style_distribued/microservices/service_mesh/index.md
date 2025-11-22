@@ -24,7 +24,7 @@ En conséquence, les développeurs ont fini par utiliser des bibliothèques et d
 
 ![without_service_mesh](images/without_service_mesh.png?width=20pc)
 
-Mais avec cette approche, notre logique métier et la configuration sont fortement couplées. La compléxité augmente et il peut vite devenir compliquer de maintenir toute cette architectures sur plusieurs dizaines de microservices.
+Mais avec cette approche, notre logique métier et la configuration sont fortement couplées. La complexité augmente et il peut vite devenir compliqué de maintenir toute cette architecture sur plusieurs dizaines de microservices.
 
 ## Service Mesh
 
@@ -43,7 +43,7 @@ Le Service Mesh est un service dédié qui va gérer l'ensemble des communicatio
 - Metrics and telemetry
 - Fault injection
 
-Par conséquent, l'ensemble des microservices ne communiquent maintenant qu'avec le Service Mesh. En général, le pattenr Sidecar est utilisé pour mettre en œuvre le Service Mesh, c'est-à-dire que le Service Mesh est déployé à côté (et non avec) de la logique métier.
+Par conséquent, l'ensemble des microservices ne communiquent maintenant qu'avec le Service Mesh. En général, le pattern Sidecar est utilisé pour mettre en œuvre le Service Mesh, c'est-à-dire que le Service Mesh est déployé à côté (et non avec) de la logique métier.
 
 ![Service Mesh](images/service_mesh.png?width=35pc)
 

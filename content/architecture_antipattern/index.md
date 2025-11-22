@@ -6,4 +6,4 @@ weight = 80
 isBoldTitle = true
 +++
 
-Dans ce chapitre nous discutons de certain Antipatterns Architecturaux.
+Dans ce chapitre nous discutons de certains Antipatterns Architecturaux.

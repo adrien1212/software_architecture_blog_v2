@@ -1,6 +1,6 @@
 +++
 draft = "true"
-title = "Pourquoi apprendre DP ?"
+title = "Pourquoi apprendre les DP ?"
 weight = 1
 +++
 

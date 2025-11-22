@@ -15,7 +15,7 @@ Un _Style Architectural_ est un nom donné à une conception architecturale réc
 Un _Patron Architectural_ est une façon de résoudre un problème architectural récurrent. MVC, par exemple, résout le problème de la séparation de l'interface utilisateur et du modèle.
 
 
-## Excellence vidéo
+## Excellente vidéo
 [ La fin des architectures en couches avec l’approche hexagonale (Benjamin Legros) ](https://youtu.be/p029gSnlnfU)
 - revient sur l'ensemble de la réflexion qui nous amène à l'archi hexagonale
 - DDD

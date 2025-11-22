@@ -1,6 +1,6 @@
 +++
 draft = "true"
-title = "Clean Archiecture"
+title = "Clean Architecture"
 weight = 30
 +++
 
@@ -22,9 +22,9 @@ Elle rend les systèmes logiciels maintenables, évolutifs et testables en isola
 
 L'entité ne dépend de rien, sauf éventuellement d'autres entités. Elle contient des données (état) et une logique réutilisables pour diverses applications. Elles sont le cœur de notre application.
 
-### Cas d'utililisation
+### Cas d'utilisation
 
-Les cas d'utilisation interagissent avec les entités (dépendent d'elles) et détiennent la logique de l'application spécifique. Les UseCase peuvent être lié à des librairies. Par exemple avec une couche d'accès aux données.
+Les cas d'utilisation interagissent avec les entités (dépendent d'elles) et détiennent la logique de l'application spécifique. Les UseCase peuvent être liés à des librairies. Par exemple avec une couche d'accès aux données.
 
 ### Interface et Adaptateur
 

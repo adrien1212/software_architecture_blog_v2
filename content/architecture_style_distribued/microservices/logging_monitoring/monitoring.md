@@ -4,18 +4,18 @@ title = "Monitoring"
 weight = 1
 +++
 
-## Implémenter le Logging
+## Implémenter le Monitoring
 
 > [!danger] Définition
 >  Le Monitoring regarde les métriques et détecte les anomalies
 
-Cela permet de fournir une vue simplifiée du systèmes. Par exemple Kibana propose la vue suivante
+Cela permet de fournir une vue simplifiée du système. Par exemple Kibana propose la vue suivante
 
 ![kibana](../images/kibana.png?width=40pc)
 
 ## Deux types de monitoring
 
-Il existe deux type de monitoring :
+Il existe deux types de monitoring :
 
 - infrastructure monitoring
 - application monitoring
@@ -36,7 +36,7 @@ On alerte quand un problème applicatif est détecté.
 
 ## Les outils
 
-Comme pour le Logging il existe plusieurs produit pour le Monitoring :
+Comme pour le Logging il existe plusieurs produits pour le Monitoring :
 
 - Nagios
 - Stack

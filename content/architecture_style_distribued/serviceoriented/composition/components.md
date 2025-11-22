@@ -27,16 +27,16 @@ Dans une SOA, les autres services ou systèmes communiquent avec un service via 
 
 ## Fournisseur de services
 
-Le fournisseur du service crée, maintient et fournit un ou plusieurs services que d'autres entité peuvent utiliser. Ces services encapsulent des fonctionnalités spécifiques ou des règles métiers qui peuvent être par exemple acheté par des services tiers.
+Le fournisseur du service crée, maintient et fournit un ou plusieurs services que d'autres entités peuvent utiliser. Ces services encapsulent des fonctionnalités spécifiques ou des règles métiers qui peuvent être par exemple achetées par des services tiers.
 
 ## Consommateur de services
-Le consommateur de services demande au fournisseur de services d'exécuter un action spécifique. Le contrat de service (accessible via le registre) spécifie les règles que le fournisseur et le consommateur de services doivent suivre lorsqu'ils interagissent l'un avec l'autre (e.g. protocole, paramètres d'entrée, paramètre de sortie, etc ...)
+Le consommateur de services demande au fournisseur de services d'exécuter une action spécifique. Le contrat de service (accessible via le registre) spécifie les règles que le fournisseur et le consommateur de services doivent suivre lorsqu'ils interagissent l'un avec l'autre (e.g. protocole, paramètres d'entrée, paramètre de sortie, etc ...)
 
 ## Broker ou registre de services
 Pour savoir quels services existent et comment communiquer avec eux nous avons besoin d'un registre.
 
 Un *registre de service*, ou broker, est un répertoire contenant les services disponibles, accessible via le réseau. Il stocke les contrats des services émis par les fournisseurs. 
-Le contrat précise la manière dont la communication doit ce faire avec le services (e.g. protocole, paramètres d'entrée, paramètre de sortie, etc ...)
+Le contrat précise la manière dont la communication doit se faire avec le service (e.g. protocole, paramètres d'entrée, paramètre de sortie, etc ...)
 
 
 ![services](../../images/histoire.png?width=30pc)

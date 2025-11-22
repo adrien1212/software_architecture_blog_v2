@@ -13,7 +13,7 @@ L'architecture SOA offre de nombreux avantages sur différents plans.
 
 - Couplage faible : les services entretiennent une relation qui minimise les dépendances et ne font que s'informer mutuellement
 
-- Abstraction : les services n'expose que leur contrat au monde extérieur. Ils cachent leur logique interne
+- Abstraction : les services n'exposent que leur contrat au monde extérieur. Ils cachent leur logique interne
 
 - Réutilisation : la logique est divisée en services dans le but de promouvoir la réutilisation
 
@@ -51,10 +51,10 @@ L'architecture SOA offre de nombreux avantages sur différents plans.
 
   - Ne nécessite pas de services centralisés
 
-- Utilisation de platforms indépendantes
+- Utilisation de plateformes indépendantes
 
 - Utilisation de standard pour communiquer entre les services (HTTP, SOAP, etc ...)
 
 - Le couplage faible permet une forte flexibilité
 
-- partage de données et de fonctionnalité, ceci n'était pas possible avec une architecture monolithique qui était fermée au monde extérieur
+- partage de données et de fonctionnalités, ceci n'était pas possible avec une architecture monolithique qui était fermée au monde extérieur

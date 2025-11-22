@@ -18,7 +18,7 @@ weight = 20
 
 ### 1. Core subdomain
 
-> Code subdomain est ce qui donne un avantage compétitif à une entreprise. Ce qui la différencie des ses concurrents
+> Core subdomain est ce qui donne un avantage compétitif à une entreprise. Ce qui la différencie de ses concurrents
 
 - Il n'est pas facilement copiable (c/c) par une autre entreprise
 - Il est complexe et change souvent
@@ -32,7 +32,7 @@ weight = 20
 
 ### 3. Supporting subdomain
 
-> Soutienne le business de l'entreprise, mais n'offre pas un avantage compétitif (core subdomain)
+> Soutiennent le business de l'entreprise, mais n'offrent pas un avantage compétitif (core subdomain)
 
 - Ces *supporting subdomains* sont souvent très simples et s’apparentent à des CRUD ou ETL.
 - Par exemple on stocke les documents dans une base MongoDB, on va créer une simple API CRUD permettant de faciliter l’échange des core-subdomain avec MongoDB en optimisant la taille des fichiers
@@ -43,8 +43,8 @@ weight = 20
 Lire la ressource [Chapter 1. Analyzing Business Domains](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/ch01.html)
 
 ### Migration d'un vers l'autre
-Au fil que le domaine évolue (fonctionnalité, lois, concurrents, etc) vaut sous-domaines peuvent être amener à migrer.
-Par exemple vous aviez un algorithme très performant pour la gestion des stocks dans votre usine mais un groupe de recherche à rendu public un algorithme tout aussi performant. Vos concurrents vont donc pouvoir s'appuyer dessus et vous ne bénéficiez plus d'un avantage concurrentiel sur ce sous-domaine (core -> generic)
+Au fil que le domaine évolue (fonctionnalité, lois, concurrents, etc) vos sous-domaines peuvent être amenés à migrer.
+Par exemple vous aviez un algorithme très performant pour la gestion des stocks dans votre usine mais un groupe de recherche a rendu public un algorithme tout aussi performant. Vos concurrents vont donc pouvoir s'appuyer dessus et vous ne bénéficiez plus d'un avantage concurrentiel sur ce sous-domaine (core -> generic)
 
 ## Identifier Subdomain Boundaries
 

@@ -9,7 +9,7 @@ weight = 40
 
 ## Motivation
 
-Prenons l'exemple d'une application de catalogue capable de récupérer des informations sur les produits à partir d'une base de données. Cette application peut être utilisée par un service qui a besoin de se tenir informer des derniers produits et des prix proposés par l'entreprise. De plus, comme il s'agit d'une organisation multinationale, la base de données peut trouver dans un autre pays. Par conséquent, la conversion de la monnaie locale doit également être effectuée en fonction du lieu d'exécution de l'application.
+Prenons l'exemple d'une application de catalogue capable de récupérer des informations sur les produits à partir d'une base de données. Cette application peut être utilisée par un service qui a besoin de se tenir informé des derniers produits et des prix proposés par l'entreprise. De plus, comme il s'agit d'une organisation multinationale, la base de données peut se trouver dans un autre pays. Par conséquent, la conversion de la monnaie locale doit également être effectuée en fonction du lieu d'exécution de l'application.
 
 ![Alt text](images/example1.png)
 
@@ -18,8 +18,8 @@ Prenons l'exemple d'une application de catalogue capable de récupérer des info
 Cette architecture pose plusieurs problèmes :
 
 - L'interopérabilité : l'application doit à la fois obtenir les données financières en temps réel pour effectuer la conversion de la monnaie locale et à la fois récupérer les informations du produit en base de données. Comme les deux systèmes sont probablement différents, le développeur doit s'occuper de l'interfaçage.
-- Redondance : étant une grosse organisation il y a des chances que le composant pour l'interfaçage est déjà été développé mais le développeur l'ignore. De plus, les différents départements de l'organisation n'utilisent peut-être pas la même technologie pour développer leur application, ce qui accroît la difficulté du partage des composants.
-- Isoler la couche métier : La logique métier est fortement couplé à la base de données. Donc quand le schéma de la base de données va évoluer l'application devra également être mise à jour. Donc retesté et redéployé.
+- Redondance : étant une grosse organisation il y a des chances que le composant pour l'interfaçage ait déjà été développé mais le développeur l'ignore. De plus, les différents départements de l'organisation n'utilisent peut-être pas la même technologie pour développer leur application, ce qui accroît la difficulté du partage des composants.
+- Isoler la couche métier : La logique métier est fortement couplée à la base de données. Donc quand le schéma de la base de données va évoluer l'application devra également être mise à jour. Donc retestée et redéployée.
 
 Une application _non-SOA_ ressemble à l'architecture suivante
 ![Alt text](images/sans_soa.png)

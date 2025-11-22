@@ -7,7 +7,7 @@ weight = 50
 > - [https://betterprogramming.pub/trade-offs-on-monolithic-vs-distributed-architectures-7a04f86d47ad](https://betterprogramming.pub/trade-offs-on-monolithic-vs-distributed-architectures-7a04f86d47ad)
 > - [https://guidanceshare.com/wiki/Application_Architecture_Guide](https://guidanceshare.com/wiki/Application_Architecture_Guide)
 
-> Nous définissons un style d'architecture comme la structure globale entre de l'interface utilisateur et le backend (e.g. layered architecture avec déploiement monolithique) et la manière dont le code interagit avec la base de données.
+> Nous définissons un style d'architecture comme la structure globale de l'interface utilisateur et le backend (e.g. layered architecture avec déploiement monolithique) et la manière dont le code interagit avec la base de données.
 
 L'objectif de l'architecte débutant est de comprendre les différents styles et les compromis qu'ils impliquent.
 
@@ -38,5 +38,5 @@ Les styles d'architecture peuvent être classés en deux types principaux : _mon
 - Microservices architecture
 
 > [!info] Note
-> Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles monolithique
+> Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles monolithiques
 

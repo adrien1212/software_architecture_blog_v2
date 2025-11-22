@@ -25,14 +25,14 @@ L'avantage de cette pratique c'est qu'elle abstrait notre système derrière un 
 1. L'utilisateur envoie une requête au service de Commande
 2. La couche API Layer contacte le service d'Authentification
 3. Le service d'authentification retourne une réponse autorisant ou non l'accès (e.g. vérifier si l'utilisateur saisi est le bon)
-4. Si l'authentification est réussite avec la couche API Layer transmet à requête au service Commande. Dans le cas contraire, l'API Layer ne contacte pas le service et retourne un code d'erreur au client (e.g. mot de passe incorrect)
+4. Si l'authentification est réussie alors la couche API Layer transmet la requête au service Commande. Dans le cas contraire, l'API Layer ne contacte pas le service et retourne un code d'erreur au client (e.g. mot de passe incorrect)
 
 > On retrouve un fonctionnement similaire avec la librairie [Spring Cloud Gateway](https://spring.io/blog/2019/08/16/securing-services-with-spring-cloud-gateway)
 
 ## Rate Limiter
 
-Il est parfois souhaité de limiter le nombre de de connexion d'un adresse IP, d'un utilisateur sur le serveur. Pour ce faire on utilise un Rate Limiter. Cet outil peut être mis en place sur le serveur ou sur une couche intermédiaire (middleware) entre le client et le serveur
+Il est parfois souhaité de limiter le nombre de connexions d'une adresse IP, d'un utilisateur sur le serveur. Pour ce faire on utilise un Rate Limiter. Cet outil peut être mis en place sur le serveur ou sur une couche intermédiaire (middleware) entre le client et le serveur
 
 ![ratelimiter](../images/ratelimiter.png)
 
-Et si nous avons une architecture microservice possédant une API Gateway qui gère l'authentification, etc ... nous pouvons y rajouter le Rate Limiter. Si une requête à atteint le nombre limite de demande alors une erreur 429 (too many request) est renvoyée.
+Et si nous avons une architecture microservice possédant une API Gateway qui gère l'authentification, etc ... nous pouvons y rajouter le Rate Limiter. Si une requête a atteint le nombre limite de demandes alors une erreur 429 (too many request) est renvoyée.

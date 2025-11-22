@@ -18,12 +18,12 @@ Allow an application to equally be driven by users, programs, automated test or 
 > [!danger] Définition
 >  Le coeur de l'hexagone ne dépend de rien (ni d'Hibernate, ni de Spring).
 
-C'est la caractéristique principale d'une architecture en Hexagonale
+C'est la caractéristique principale d'une architecture Hexagonale
 
 
 ## 1. Le coeur applicatif
 
-Le coeur applicatif contient l'ensemble de la logique métier est totalement indépendant de la _présentation_ ou de la _persistance_.
+Le coeur applicatif contient l'ensemble de la logique métier et est totalement indépendant de la _présentation_ ou de la _persistance_.
 
 ![Alt text](images/hexa1.png?width=15pc)
 
@@ -35,26 +35,26 @@ If we want to follow the [Single Responsibility Principle]({{< ref "single_respo
 
 > A driven port is an interface for a functionality, needed by the application for implementing the business logic. Such functionality is provided by a driven actor. So driven ports are the SPI (Service Provider Interface) required by the application. A driven port would be like a Required Interface.
 
-Néanmoins notre application a besoin de communiquer avec plusieurs librairie : base de données, email, etc ...
-Au lieu d'avoir une dépendance directe avec ce module tier, on va utiliser un port/adaptateur.
+Néanmoins notre application a besoin de communiquer avec plusieurs librairies : base de données, email, etc ...
+Au lieu d'avoir une dépendance directe avec ce module tiers, on va utiliser un port/adaptateur.
 
 ![Alt text](images/hexa2.png?width=30pc)
 
-- Le port permet aux classes métiers de communiquer avec l'extérieur sans connaitre l'implémentation de la base de données. Tout passe au travers d'un contrat.
-- L'adaptateur est la logique qui permet d'effectuer l'écriture en base de donnée.
+- Le port permet aux classes métiers de communiquer avec l'extérieur sans connaître l'implémentation de la base de données. Tout passe au travers d'un contrat.
+- L'adaptateur est la logique qui permet d'effectuer l'écriture en base de données.
 - Par conséquent, les données envoyées par les classes métier sont converties par l'adaptateur en une donnée lisible pour la base de données.
 
 ![Alt text](images/hexa3.png?width=40pc)
 
 > [!note] Note
->  Et quelque soit les changements effectués, seul l'adaptateur changera. Le coeur applicatif, lui, reste inchangé. On découple la logique interne avec l'utilisation de modules tiers.
+>  Et quels que soient les changements effectués, seul l'adaptateur changera. Le coeur applicatif, lui, reste inchangé. On découple la logique interne avec l'utilisation de modules tiers.
 
 ## 3. Communication entrante (Driver Port)
 
 > Driver Ports offer the application functionality to drivers of the outside world. Thus, driver ports are said to be the use case boundary of the application. They are the API of the application.
 
 On peut faire de même pour les communications entrantes, par exemple lorsque notre logique métier est appelée par une API.
-Pour ce faire, on va définir un contrat d'échange où on préciser comment on souhaite recevoir les données (interface + DTO de requête) et quelles données nous renvoyons (DTO de réponse). Par conséquent, quelque soit l'appelant l'input et l'ouput seront toujours les mêmes.
+Pour ce faire, on va définir un contrat d'échange où on précise comment on souhaite recevoir les données (interface + DTO de requête) et quelles données nous renvoyons (DTO de réponse). Par conséquent, quel que soit l'appelant l'input et l'output seront toujours les mêmes.
 
 ```java
 interface IService {
@@ -65,7 +65,7 @@ interface IService {
 
 ![Alt text](images/hexa4.png)
 
-> Nous n'avons plus besoin de passer du temps à déterminer à quoi devrait ressembler tel ou tel DTO, et quelles sont les données dont le frontend besoin. Nous pouvons plutôt nous concentrer sur les données que nous voulons exposer au frontend.
+> Nous n'avons plus besoin de passer du temps à déterminer à quoi devrait ressembler tel ou tel DTO, et quelles sont les données dont le frontend a besoin. Nous pouvons plutôt nous concentrer sur les données que nous voulons exposer au frontend.
 
 Dans notre cas les données qu'on souhaitera exposer au frontend seront les attributs contenus dans `ResponseDTO`
 
@@ -73,7 +73,7 @@ Dans notre cas les données qu'on souhaitera exposer au frontend seront les attr
 
 Comme nous l'avons vu, les éléments de l'architecture sont :
 
-- **L'Hexagone** qui réprésente l'application
+- **L'Hexagone** qui représente l'application
 
   - Driver Ports (à droite) ==> API offerte par l'application
   - Driven Ports (à gauche) ==> SPI requis par l'application
@@ -85,4 +85,4 @@ Comme nous l'avons vu, les éléments de l'architecture sont :
 
 - **Adaptateurs** : adaptent une technologie spécifique à l'application
   - Driver Adapters ==> _utilisent_ les drivers ports
-  - Driven Adapters ==> _implémentent_ en œuvre les driven ports
+  - Driven Adapters ==> _mettent_ en œuvre les driven ports

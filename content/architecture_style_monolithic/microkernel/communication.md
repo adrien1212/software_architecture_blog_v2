@@ -22,7 +22,7 @@ La communication avec le coeur peut se faire de deux manières :
 - via APIs REST
 
 ### Point-à-point
-Avec cette approche les plugins sont compilés sous la forme d'éxécutable (e.g. `jar`) puis :
+Avec cette approche les plugins sont compilés sous la forme d'exécutable (e.g. `jar`) puis :
 - le coeur applicatif appelle les plugins grâce un appel de fonction classique via l'interface (i.e. code java)
 - le plugin peut appeler le coeur applicatif via l'interface également
 
@@ -31,7 +31,7 @@ Avec cette approche les plugins sont compilés sous la forme d'éxécutable (e.g
 
 
 ### REST
-Les modules peuvent également être mis en œuvre commes des services à distance et accessibles par le biais d'interfaces REST à partir du système central.
+Les modules peuvent également être mis en œuvre comme des services à distance et accessibles par le biais d'interfaces REST à partir du système central.
 
 ![REST](../images/rest.png?width=40pc)
 
@@ -39,7 +39,7 @@ Avec une communication point-à-point notre architecture microkernel est consid�
 - la scalabilité de notre système; si plugin plus utilisé que les autres nous pourons le scaler
 - d'avoir une communication asynchrone; avec l'approche point-à-point communication est forcément synchrone
 
-Néanmoins, n'oublions pas de prendre en compte que de passer d'une architecture monolithique à une architecture distribué (ici avec REST) crée de la compléxité et un cout supplémentaire.
+Néanmoins, n'oublions pas de prendre en compte que de passer d'une architecture monolithique à une architecture distribuée (ici avec REST) crée de la complexité et un coût supplémentaire.
 
 ### Comment choisir ?
 
@@ -48,6 +48,6 @@ The choice of whether to make the communication to plugin components from the co
 {{% /notice %}}
 
 ## Communication Plugin-Plugin
-Le coeur applicatif est responsable de coordonner les communications entre les différents plugins. Une communication directe entre deux plugins est fortement déconseillée. En effet, si un service est indisponible ou remplacé, les autres processus qui communiquent avec lui doivent en être informés. Nous devons donc envoyer un ensemble de notification à tous les plugins. Maintenant en centralisant dans le kernel, seul se dernier à besoin d'être au courant. Ceci se fait généralement au moyen de *bus*.
+Le coeur applicatif est responsable de coordonner les communications entre les différents plugins. Une communication directe entre deux plugins est fortement déconseillée. En effet, si un service est indisponible ou remplacé, les autres processus qui communiquent avec lui doivent en être informés. Nous devons donc envoyer un ensemble de notifications à tous les plugins. Maintenant en centralisant dans le kernel, seul ce dernier a besoin d'être au courant. Ceci se fait généralement au moyen de *bus*.
 
 ![microkernel bus](../images/bus.png?width=20pc)
