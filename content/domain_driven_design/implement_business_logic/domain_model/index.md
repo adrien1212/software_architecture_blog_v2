@@ -11,13 +11,13 @@ domain services are the building blocks of such an object model. [^1]
 
 [^1]: Learning Domain Driven Design p77
 
-- Pour ne pas avoir des [Anemic Domain Model]({{< relref "commun_antipattern/anemic_model/" >}}), les *models* encapsule la structure de données ainsi que les comportements
-- Les *models* ne doit tenir compte d'aucune infrastructure ou problématique technique (e.g. appel à la BDD). Ils sont des POJOs.
+- Pour ne pas avoir des [Anemic Domain Model]({{< relref "commun_antipattern/anemic_model/" >}}), les *modèles* encapsulent la structure de données ainsi que les comportements
+- Les *modèles* ne doivent tenir compte d'aucune infrastructure ou problématique technique (e.g. appel à la base de données). Ils sont des POJO.
 
 ```java
 /**
- * - Encapsule structure de données + comportement (ajouterProduit, calculerTotal)
- * - n'est lié à aucune dépendance Spring, Hibernate, etc ...
+ * - Encapsule la structure de données + comportement (ajouterProduit, calculerTotal)
+ * - n'est liée à aucune dépendance Spring, Hibernate, etc.
  */
 public class Commande {
     private final UUID id;

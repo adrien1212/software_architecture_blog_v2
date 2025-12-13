@@ -10,16 +10,16 @@ weight = 2
 ```java
 /* Port entrant */
 public interface IService {
-   void creer(UserDTO dto);!
+   void creer(UserDTO dto);
 }
 ```
 
 ```java
 /* Port entrant */
 public class Controler {
-   public void creerNouvelUser(String nom, email, mdp) {
+   public void creerNouvelUser(String nom, String email, String mdp) {
         UserDTO userDTO = new UserDTO(nom, email, mdp);
-        iService.create(userDTO)
+        iService.create(userDTO);
    }
 }
 ```
@@ -36,21 +36,21 @@ public interface IRepository {
 /* Adaptateur */
 public class RepositoryAdaptateur {
     public void create(UserRepoDTO dto) {
-        UserJPAEntity jpaEntity = UserJPAEntity(dto.nom, dto.email, dto.mdp, dto.dateDuJour)
-        postgresRepository.save(jpaEntity)
+        UserJPAEntity jpaEntity = new UserJPAEntity(dto.nom, dto.email, dto.mdp, dto.dateDuJour);
+        postgresRepository.save(jpaEntity);
     }
 }
 ```
 
 ## Le service
-Il récupère les informations du contrôleur, transforme le DTO, et envoie au port sortant
+Il récupère les informations du contrôleur, transforme le DTO, et les envoie au port sortant
 
 ```java
 /* Port entrant */
 public class ServiceImpl implements IService {
    public void creer(UserDTO dto) {
-       userRepoDTO = new UserRepoDTO(dto.nom, dto.email, dto.mdp, dateDuJour()); // la date du jour est calculée par le service
-       iRepository.create(userRepoDTO)
+       UserRepoDTO userRepoDTO = new UserRepoDTO(dto.nom, dto.email, dto.mdp, dateDuJour()); // la date du jour est calculée par le service
+       iRepository.create(userRepoDTO);
    }
 }
 ```

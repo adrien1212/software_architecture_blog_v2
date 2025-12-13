@@ -17,11 +17,11 @@ Prenons l'exemple d'une application de catalogue capable de récupérer des info
 
 Cette architecture pose plusieurs problèmes :
 
-- L'interopérabilité : l'application doit à la fois obtenir les données financières en temps réel pour effectuer la conversion de la monnaie locale et à la fois récupérer les informations du produit en base de données. Comme les deux systèmes sont probablement différents, le développeur doit s'occuper de l'interfaçage.
-- Redondance : étant une grosse organisation il y a des chances que le composant pour l'interfaçage ait déjà été développé mais le développeur l'ignore. De plus, les différents départements de l'organisation n'utilisent peut-être pas la même technologie pour développer leur application, ce qui accroît la difficulté du partage des composants.
-- Isoler la couche métier : La logique métier est fortement couplée à la base de données. Donc quand le schéma de la base de données va évoluer l'application devra également être mise à jour. Donc retestée et redéployée.
+- L'interopérabilité : l'application doit à la fois obtenir les données financières en temps réel pour effectuer la conversion de la monnaie locale et récupérer les informations du produit en base de données. Comme les deux systèmes sont probablement différents, le développeur doit s'occuper de l'interfaçage.
+- Redondance : l'organisation étant grande, il y a des chances que le composant pour l'interfaçage ait déjà été développé mais que le développeur l'ignore. De plus, les différents départements de l'organisation n'utilisent peut-être pas la même technologie pour développer leur application, ce qui accroît la difficulté du partage des composants.
+- Isoler la couche métier : La logique métier est fortement couplée à la base de données. Ainsi, lorsque le schéma de la base de données évoluera, l'application devra également être mise à jour. Elle devra donc être retestée et redéployée.
 
-Une application _non-SOA_ ressemble à l'architecture suivante
+Une application _non SOA_ ressemble à l'architecture suivante :
 ![Alt text](images/sans_soa.png)
 
 ## SOA
@@ -33,6 +33,6 @@ Avec la SOA, la logique métier est décomposée en services bien définis et r�
 > [!danger] Définition
 >  Les services font office d'abstraction.
 
-L'architecture orientée services expose les fonctionnalités de l'entreprise sous la forme de _services_ destinés à être consommés par les applications. Pour notre exemple nous aurions les services suivants
+L'architecture orientée services expose les fonctionnalités de l'entreprise sous la forme de _services_ destinés à être consommés par les applications. Pour notre exemple, nous aurions les services suivants :
 
 ![Alt text](images/soa2.png)

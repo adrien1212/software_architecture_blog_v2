@@ -1,7 +1,7 @@
 +++
 menuPre = "98. "
 archetype = "chapter"
-title = "Domain Driven Design Exemple"
+title = "Exemple de Domain-Driven Design"
 weight = 98
 addBrBefore = true
 isBoldTitle = true

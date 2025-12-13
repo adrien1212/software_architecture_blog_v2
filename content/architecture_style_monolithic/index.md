@@ -8,7 +8,7 @@ weight = 79
 > [!danger] Définition
 >  In Monolith Architecture, our system consists of exactly one piece of executable code and nothing more.
 
-C'est l'architecture originale des logiciels. Avec l'architecture monolithique tous les composants logiciels sont exécutés dans un seul process (même mémoire, thread)
+C'est l'architecture originale des logiciels. Avec l'architecture monolithique tous les composants logiciels sont exécutés dans un seul processus (même mémoire, thread).
 
 ## Inconvénients généraux
 
@@ -20,9 +20,9 @@ C'est l'architecture originale des logiciels. Avec l'architecture monolithique t
 
 - Élasticité (faible) : comme pour la scalabilité, ce style d'architecture ne peut pas répondre aux pics d'utilisation au-delà de sa capacité intégrée.
 
-- Couplage (fort) : les classes sont fortement couplées, par exemple, il n'y a pas d'API standardisée permettant d'assurer un découplage. Ainsi un petit changement à un endroit peut impacter un composant.
+- Couplage (fort) : les classes sont fortement couplées. Par exemple, il n'y a pas d'API standardisée permettant d'assurer un découplage. Ainsi, un petit changement à un endroit peut impacter un composant.
 
 - Partage (faible) : une application monolithique n'expose rien à d'autres applications, pas d'API externe ou de listener.
 
-- Une seule plateforme technologique : comme c'est un seul process on ne peut pas développer une partie en Java et l'autre en Python.
+- Une seule plateforme technologique : comme c'est un seul processus, on ne peut pas développer une partie en Java et l'autre en Python.
   Or un langage n'est pas forcément adapté pour tout (Python pour logiciel lourd et Java pour Machine Learning). De plus, si notre application utilise Java 8 et que nous souhaitons passer à Java 11 nous devrons migrer toute l'application.

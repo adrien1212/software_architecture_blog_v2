@@ -17,20 +17,20 @@ Cela permet de fournir une vue simplifiée du système. Par exemple Kibana propo
 
 Il existe deux types de monitoring :
 
-- infrastructure monitoring
-- application monitoring
+- Monitoring d'infrastructure
+- Monitoring d'application
 
-### Infrastructure monitoring
+### Monitoring d'infrastructure
 
 > [!danger] Définition
 >  On y contrôle le serveur (CPU, RAM, Disque, Réseau)
 
 On alerte lorsqu'un problème d'infrastructure est détecté.
 
-### Application monitoring
-
-> [!danger] Définition
->  On y contrôle l'application elle-même (Requêtes par minutes, commandes par jours, etc ...)
+### Monitoring d'application
+ 
+ > [!danger] Définition
+ >  On y contrôle l'application elle-même (Requêtes par minute, commandes par jour, etc.)
 
 On alerte quand un problème applicatif est détecté.
 

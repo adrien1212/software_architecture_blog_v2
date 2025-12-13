@@ -4,8 +4,8 @@ weight = 10
 +++
 
 Dans ce premier chapitre nous allons voir :
-- d'une part **les attributs** d'un bon système au travers de la [Modularité]({{< relref "fundamental_principles/modularity/index" >}}) et de la [Cohesion - Couplage]({{< relref "fundamental_principles/couplage_and_cohesion/index" >}})
-- et **les techniques** qui permettent d'atteindre ce système comme la notion [Abstraction - Information hinding]({{< relref "fundamental_principles/aei/index" >}}) et de [Separation of Concern]({{< relref "fundamental_principles/separation_of_concern/index" >}})
+- d'une part **les attributs** d'un système de qualité au travers de la [Modularité]({{< relref "fundamental_principles/modularity/index" >}}) et de la [Cohésion / Couplage]({{< relref "fundamental_principles/couplage_and_cohesion/index" >}})
+- et **les techniques** qui permettent de construire ce système comme la notion [Abstraction - Information Hiding]({{< relref "fundamental_principles/aei/index" >}}) et de [Separation of Concerns]({{< relref "fundamental_principles/separation_of_concern/index" >}})
 
 ## Pourquoi ces concepts ?
 

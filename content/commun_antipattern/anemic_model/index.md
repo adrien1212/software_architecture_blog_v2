@@ -16,7 +16,7 @@ weight = 10
 
 
 ## Pourquoi est-ce problématique ?
-Nous créons du code procédural, c'est-à-dire qui va en l'encontre de la POO où la logique métier et la structure des données doivent vitre dans la même classe.
+Nous créons du code procédural, c'est-à-dire qui va en l'encontre de la POO où la logique métier et la structure des données doivent vivre dans la même classe.
 
 ### État incohérent
 Les objets ne contiennent plus les règles permettant de garantir un état cohérent
@@ -26,10 +26,10 @@ Les objets ne contiennent plus les règles permettant de garantir un état cohé
 ### Violation du principe d'encapsulation
 > Violation of the [encapsulation]({{< relref "fundamental_principles/aei/index" >}}) and information hiding principles [^1]
 
-La structure des données et la logique métier (*behavior*) doivent vitre dans la même classe.
+La structure des données et la logique métier (*behavior*) doivent vivre dans la même classe.
 
 ## Quand le retrouve-t-on ?
-Une mauvaise structure de la Layered Architecture peut conduire à cet anti-pattern. Je vous recommande lire [The Biggest Flaw of Spring Web Applications](https://www.petrikainulainen.net/software-development/design/the-biggest-flaw-of-spring-web-applications/) qui présente comment des applications Spring peuvent rapidement être mal conçue avec des classe `xService` qui contiennent la logique métier et le `Model` de donnée qui ne contient que des getters et setters
+Une mauvaise structure de la Layered Architecture peut conduire à cet anti-pattern. Je vous recommande de lire [The Biggest Flaw of Spring Web Applications](https://www.petrikainulainen.net/software-development/design/the-biggest-flaw-of-spring-web-applications/) qui présente comment des applications Spring peuvent rapidement être mal conçues avec des classes `xService` qui contiennent la logique métier et le `Modèle de données` qui ne contient que des getters et setters
 
 ### Mauvais code
 ```java

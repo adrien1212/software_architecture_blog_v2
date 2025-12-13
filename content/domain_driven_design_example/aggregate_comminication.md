@@ -1,5 +1,5 @@
 +++
-title = "Aggregate communication"
+title = "Communication entre Agrégats"
 weight = 10
 +++
 
@@ -47,12 +47,12 @@ public class FeedbackService {
 ```
 
 ## Le problème
-Nous avons  deux agrégats (`SessionEnrollment` et `Feedback`), mais on continue à traiter `Feedback` comme un enfant interne de `SessionEnrollment` (référence d'entité bidirectionnelle, cascade et invariants imposés par le parent). [Vernon](https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf?utm_source=chatgpt.com) recommande explicitement que les agrégats références à d'autres agrégats uniquement par leur identifiant (id).
+Nous avons deux agrégats (`SessionEnrollment` et `Feedback`), mais on continue à traiter `Feedback` comme un enfant interne de `SessionEnrollment` (référence d'entité bidirectionnelle, cascade et invariants imposés par le parent). [Vernon](https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf?utm_source=chatgpt.com) recommande explicitement que les agrégats référencent d'autres agrégats uniquement par leur identifiant (id).
 
 ## Solution : Feedback dans son propre Agrégat
-- Dans SessionEnrollment supprimer la relation vers Feedback
-- Dans Feedback remplacer la relation par `Long sessionEnrollmentId;`
-- Dans la couche Application Service orchestrer la création d'un feedback
+- Dans SessionEnrollment, supprimer la relation vers Feedback
+- Dans Feedback, remplacer la relation par `Long sessionEnrollmentId;`
+- Dans la couche Application Service, orchestrer la création d'un feedback
 
 ### Feedback Entity
 ```java
@@ -95,10 +95,10 @@ public class FeedbackService {
 > - [Modeling Aggregates with DDD and Entity Framework](https://web.archive.org/web/20150320062723/https://vaughnvernon.co/?p=879)
 
 On essaie de mixer les bonnes pratiques JPA et DDD :
-- JPA avoir une relation bidirectionnelle entre nos entités
-- Tandis que DDD nous dit de référencer une entité d'un agrégat extérieur uniquement par son id.
+- Avec JPA, on tend à avoir une relation bidirectionnelle entre nos entités
+- Tandis que le DDD nous dit de référencer une entité d'un agrégat extérieur uniquement par son id.
 
-Une première solution consisterait à séparer le Domain Model du Persistence Model (architecture hexagonale stricte). Mais cela implique la création d'adaptateur et beaucoup de code boiterplate (https://stackoverflow.com/questions/31400432/ddd-domain-entities-vo-and-jpa)
+Une première solution consisterait à séparer le Domain Model du Persistence Model (architecture hexagonale stricte). Mais cela implique la création d'adaptateur et beaucoup de code boilerplate (https://stackoverflow.com/questions/31400432/ddd-domain-entities-vo-and-jpa)
 
 Une seconde solution est d'utiliser `@JoinColumn`
 

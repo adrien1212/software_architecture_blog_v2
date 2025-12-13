@@ -8,23 +8,23 @@ weight = 8
 
 Une interface permet de définir un ensemble de services qu’un client peut obtenir d’un objet :
 - Elle définit les méthodes (i.e. service) qui vont pouvoir être appelées
-- Elle définit les informations que doit founir l'appelant (i.g paramètre de la méthode)
-- Elle définit les informations que l'appelant va obtenir (i.g type de retour)
+- Elle définit les informations que doit fournir l'appelant (ex : paramètre de la méthode)
+- Elle définit les informations que l'appelant va obtenir (ex : type de retour)
  
 ![Alt text](fundamental_principles/images/interface.png)
 
-Pour communiquer avec la `Appelée` la classe `Appelant` devra respecter le contrat éditer dans l'infterface `Interface`.
+Pour communiquer avec l'`Appelé` la classe `Appelant` devra respecter le contrat édité dans l'interface `Interface`.
 - `Appelant` devra fournir un objet de type `A` 
 - `Appelant` recevra du service un objet de type `B`
 
 ## Changer l'implémentation
 > Once you depend on interfaces only, you're decoupled from the implementation. That means the implementation can vary, and that's a healthy dependency relationship
 
-=> Donc, une interface permet **d'avoir un couplage faible entre l'appelant et l'appelée**.
+=> Donc, une interface permet **d'avoir un couplage faible entre l'appelant et l'appelé**.
 
 ![Alt text](fundamental_principles/images/interface2.png)
 
-Grâce à cette conception, si nous décidons de changer la classe `Appelée` par `Appelée2` l'appelant n'aura ni besoin d'être recompilé, ni redeployé car il a seulement connaissance de l'interface et pas l'implémentation concrète. L'abstraction permet [d'exposer uniquement le service tout en cachant l'implémentation concrète]({{< relref "fundamental_principles/aei" >}}).
+Grâce à cette conception, si nous décidons de changer la classe `Appelée` par `Appelée2` l'appelant n'aura ni besoin d'être recompilé, ni redéployé car il a seulement connaissance de l'interface et non de l'implémentation concrète. L'abstraction permet [d'exposer uniquement le service tout en cachant l'implémentation concrète]({{< relref "fundamental_principles/aei" >}}).
 
 ## Citation de la ressource
 

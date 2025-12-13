@@ -14,7 +14,7 @@ L'objectif de l'architecte débutant est de comprendre les différents styles et
 ## Classification
 
 
-Les styles d'architecture peuvent être classés en deux types principaux : _monolithique_ (une seule unité de déploiement de tout le code) et _distribué_ (plusieurs unités de déploiement connectées par des protocoles d'accès à distance).
+Les styles d'architecture peuvent être classés en deux types principaux : _monolithique_ (le code entier forme une seule unité de déploiement) et _distribué_ (plusieurs unités de déploiement connectées par des protocoles d'accès à distance).
 
 ### Monolithique
 
@@ -38,5 +38,5 @@ Les styles d'architecture peuvent être classés en deux types principaux : _mon
 - Microservices architecture
 
 > [!info] Note
-> Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles monolithiques
+> Les architectures distribuées partagent toutes un ensemble commun de défis et de problèmes que l'on ne retrouve pas dans les styles monolithiques.
 

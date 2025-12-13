@@ -12,5 +12,5 @@ L'architecture microkernel offre de nombreux avantages.
 
 ## Discussions
 Elle offre deux choix d'implémentation pour la communication :
-- point-à-point, nous avons donc une architecture monolithique
-- via APIs, nous avons donc une architecture pouvant être distribuée. Il faut donc prendre en compte les difficultés de déploiements et le coût supplémentaire.
+- point-à-point : nous avons donc une architecture monolithique
+- via des API : nous avons donc une architecture pouvant être distribuée. Il faut donc prendre en compte les difficultés de déploiement et le coût supplémentaire.

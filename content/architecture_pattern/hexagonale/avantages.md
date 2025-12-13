@@ -21,16 +21,16 @@ weight = 3
 **Flexibilité**
 
 - Pour chaque port, on peut facilement changer l'adaptateur
-- On peut développer un nouvel adaptateur sans toucher au coeur applicatif
+- On peut développer un nouvel adaptateur sans toucher au cœur applicatif
 
 **Retarder les décisions technologiques**
 
-- Lorsqu'on commence à développer on peut se concentrer sur le coeur applicatif (dont les ports)
+- Lorsqu'on commence à développer, on peut se concentrer sur le cœur applicatif (dont les ports)
 - Puis choisir les frameworks/technologies plus tard qui seront des adaptateurs de nos ports.
 
 ## Inconvénients
 
 **Complexité**
 
-- Augmentation du nombre de classes (un port par usecase et plusieurs adaptateurs par ports)
+- Augmentation du nombre de classes (un port par use case et plusieurs adaptateurs par port)
 - [La flexibilité ajoute de la complexité]({{% relref "../../characteristics/flexibility.md" %}})

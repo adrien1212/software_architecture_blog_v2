@@ -28,10 +28,10 @@ Pour les systèmes dont la performance est la caractéristique première l'archi
 
 ## Quick-and-Dirty Systems
 
-Lorsqu'on veut créer rapidement un logiciel (e.g. faire un Proof of Concept) il faut privilégier du monolithe. En effet, implémenter du microservice demande du temps et rajoute de la complexité.
+Lorsqu'on veut créer rapidement un logiciel (e.g. faire un Proof of Concept (POC)), il faut privilégier le monolithe. En effet, implémenter des microservices demande du temps et rajoute de la complexité.
 
 ## Aucune mise à jour prévue
 
-Même si cela existe de moins en moins il existe des applications qui ne nécessitent presque aucune mise à jour (e.g. système embarqué).
+Bien que cela soit de moins en moins fréquent, il existe des applications qui ne nécessitent presque aucune mise à jour (e.g. système embarqué).
 
-L'avantage du microservice est son temps de mise à jour rapide grâce à des cycles itératifs. Par conséquent, aucune raison d'utiliser cette approche si le système n’est jamais mis à jour.
+L'avantage du microservice est sa rapidité de mise à jour grâce à des cycles itératifs. Par conséquent, aucune raison d'utiliser cette approche si le système n’est jamais mis à jour.

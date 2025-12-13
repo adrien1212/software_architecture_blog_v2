@@ -8,7 +8,7 @@ weight = 40
 > - [https://dzone.com/articles/the-service-mesh-in-the-microservices-world](https://dzone.com/articles/the-service-mesh-in-the-microservices-world)
 > - [https://www.nginx.com/blog/what-is-a-service-mesh/](https://www.nginx.com/blog/what-is-a-service-mesh/)
 
-Quand vous avez de plus en plus de services il peut devenir très compliqué de gérer l'ensemble des communications inter-service.
+Quand vous avez de plus en plus de services, il peut devenir très compliqué de gérer l'ensemble des communications inter-services.
 
 ## Problématique
 
@@ -20,7 +20,7 @@ Les microservices communiquent énormément entre eux, par conséquent de nombre
 
 ### Première approche
 
-En conséquence, les développeurs ont fini par utiliser des bibliothèques et des composants tiers tels qu'Eureka, Ribbon, Hystrix pour fournir ces fonctionnalités communes supplémentaires : service discovery, load balancing, circuit breaker, logging, etc ...
+En conséquence, les développeurs ont fini par utiliser des bibliothèques et des composants tiers tels qu'Eureka, Ribbon, Hystrix pour fournir ces fonctionnalités communes supplémentaires : service discovery, load balancing, circuit breaker, logging, etc.
 
 ![without_service_mesh](images/without_service_mesh.png?width=20pc)
 
@@ -29,14 +29,14 @@ Mais avec cette approche, notre logique métier et la configuration sont forteme
 ## Service Mesh
 
 > [!danger] Définition
->  Un Service Mesh est un ensemble de composants logiciels qu'on positionne à côté du microservice et qui gère l'ensemble des communications inter-services.
+>  Un Service Mesh est un ensemble de composants logiciels que l'on positionne à côté du microservice et qui gèrent l'ensemble des communications inter-services.
 
 Le Service Mesh est un service dédié qui va gérer l'ensemble des communications inter-services :
 
 - Load balancing
-- Service discovery
-- Health checks
-- Authentication
+- Découverte de services (Service discovery)
+- Vérifications de santé (Health checks)
+- Authentification (Authentication)
 - Traffic management and routing
 - Circuit breaking and failover policy
 - Security and policy management

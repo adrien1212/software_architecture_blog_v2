@@ -6,11 +6,11 @@ weight = 30
 
 **Pourquoi les flèches sont orientées vers le domaine ?**
  
- Lorsque j'ai commencé à étudier les architectures je n'avais jamais pensé à me poser cette question, cela me semblait naturel mais je n'avais pas la réponse concrète. Ici je souhaite vous partager le _pourquoi?_
+Lorsque j'ai commencé à étudier les architectures, je n'avais jamais pensé à me poser cette question; cela me semblait naturel, mais je n'avais pas de réponse concrète. Ici, je souhaite partager avec vous le *pourquoi*.
 
 ## Ce que nous avons
 
-L'architecture hexagonale est comme suit, tout dépend de la couche Service (ou Domaine). La question que nous soulevons est de savoir si nous ne pouvons pas avoir à la place la couche Service qui dépend de la Persistance
+L'architecture hexagonale est comme suit : tout dépend de la couche Service (ou Domaine). La question est de savoir si nous ne pourrions pas avoir à la place une couche Service dépendant de la Persistance.
 
 ![alt text](../images/question1.png)
 
@@ -28,14 +28,14 @@ Dans l'architecture hexagonale l'élément qui est le plus stable est la couche 
 - qu'on puisse l'appeler via la couche Présentation
 - pour qu'elle puisse appeler les autres couches (e.g. couche persistance)
 
-Nous avons donc bien l'architecture suivante, où **tout dépend de Domaine et Domaine qui ne dépend de rien**. Nous avons inversé les dépendances pour que Service utilise Persistance et Présentation sans en dépendre
+Nous avons donc bien l'architecture suivante, où **tout dépend du Domaine et le Domaine ne dépend de rien**. Nous avons inversé les dépendances pour que Service utilise Persistance et Présentation sans en dépendre.
 
 ![alt text](../images/hexa4.png)
 
 ## Conclusion
 
-Service (ou Domaine ou Coeur Applicatif) est un module de haut niveau :
+Service (ou Domaine ou Cœur Applicatif) est un module de haut niveau :
 
 - Il utilise la couche Persistance et Présentation
 - MAIS pour faire en sorte qu'il ne dépende ni de Persistance ni de Présentation nous avons inversé les dépendances via des interfaces
-  - Et nous ne voulons pas ces dépendances car nous souhaitons avoir un coeur applicatif totalement indépendant des changements dans les autres couches : **nous voulons qu'il soit stable**
+  - Et nous ne voulons pas de ces dépendances, car nous souhaitons avoir un cœur applicatif totalement indépendant des changements dans les autres couches : **nous voulons qu'il soit stable**

@@ -12,7 +12,7 @@ isBoldTitle = true
 
 Un _Style Architectural_ est un nom donné à une conception architecturale récurrente. Contrairement à un patron, il n'existe pas pour "résoudre" un problème.
 
-Un _Patron Architectural_ est une façon de résoudre un problème architectural récurrent. MVC, par exemple, résout le problème de la séparation de l'interface utilisateur et du modèle.
+Un _Patron Architectural_ est un moyen de résoudre un problème architectural récurrent. MVC, par exemple, résout le problème de la séparation de l'interface utilisateur et du modèle.
 
 
 ## Excellente vidéo

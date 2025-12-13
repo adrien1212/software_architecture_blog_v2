@@ -20,9 +20,9 @@ main() {
 }
 ```
 
-Notre *Factory Simple* permet de cacher la logique d'instanciation. Nous rajoutons maintenant la notion de domestique et de sauvage.
-- premièrement notre `switch` doit évoluer (non respect du Open/Close Principle)
-- et ensuite on peut se demander si les animaux domestiques et sauvages possèdent les mêmes méthodes
+Notre *Factory Simple* permet de cacher la logique d'instanciation. Nous ajoutons maintenant la notion de domestique et de sauvage.
+- premièrement notre `switch` doit évoluer (non respect de l'Open/Closed Principle)
+- ensuite on peut se demander si les animaux domestiques et sauvages possèdent les mêmes méthodes
 
 ![alt text](ajout_animaux.png)
 
@@ -31,7 +31,7 @@ Pour ces deux raisons, le diagramme de classe ci-dessus n'est pas satisfaisant. 
 ![alt text](sauvage_domestique.png)
 
 Puis comment, pouvons nous fabriquer ces différents objets ?
-- pour chaque *variante de produit* (i.e Chien et Tigre) définir une factory
+- pour chaque *variante de produit* (i.e Chien et Tigre) définir une fabrique (factory)
 
 ![abs factory animal](abs_factory_animal.png)
 
@@ -60,14 +60,14 @@ main() {
     animalSauvage.chasser();
 }
 ```
-Le client peut travailler avec n’importe quelle variante de fabrique ou produit, tant qu’il interagit avec les interfaces abstraites.
+Le client peut travailler avec n’importe quelle variante de fabrique ou produit, tant qu'il interagit avec les interfaces abstraites.
 - Le client n'a pas à se préoccuper du type concret qui est choisi à l'exécution
 - Il se concentre sur le comportement à apporter, ici `chasser()` quel que soit le type concret de l'animal
 
-### Open/Close Principle
+### Open/Closed Principle
 Maintenant, nous pouvons ajouter de nouvelles *variantes de produits* (e.g. Chat) sans endommager l’existant.
 - implémenter `IAnimalDomestique` et `IAnimalSauvage`
-- implémenter `IFactoryAnimal`
+- implémenter `IAnimalFactory`
 
 La seule contrainte est que si nous souhaitons ajouter un produit, par exemple *Habitat* alors nous devrions modifier `IAnimalFactory` et l'ensemble des implémentations concrètes.[^2]
 
@@ -91,10 +91,10 @@ Notre exemple avec les animaux est très simpliste, mais le patron factory joue 
 ### Définition
 > [!définition] Définition
 > 1. Le but de ce patron de conception est d'isoler la création des objets de leur utilisation. 
-> 2. Elle fournit une interface pour créer des familles d'objets (e.g. domestique/sauvage) liés ou inter-dépendants sans avoir à préciser au moment de leur création la classe concrète à utiliser.
+> 2. Il fournit une interface pour créer des familles d'objets (e.g. domestique/sauvage) liés ou interdépendants sans avoir à préciser au moment de leur création la classe concrète à utiliser.
 
 ## Real-world example : API JDBC et Abstract Factory
-Nous avons défini le patron Abstract Factory mais nous ne voyez peut-être pas l’intérêt concret. Nous allons repartir de l'exemple JDBC qui utilise derrière ce patron de conception. 
+Nous avons défini le patron Abstract Factory mais vous ne voyez peut-être pas l’intérêt concret. Nous allons repartir de l'exemple JDBC qui utilise ce patron de conception. 
 
 JDBC nous permet d’interagir avec la base de données, dont voici un bref exemple
 ```java
@@ -107,7 +107,7 @@ ResultSet resultSet = statement.executeQuery("SELECT * FROM t_article");  // qui
 Lorsque vous écrivez le code ci-dessus, vous n'avez pas à vous préoccuper du SGBD qui sera utilisé à l'exécution (MySQL, Postgres, etc ...)
 - --> isoler la création des objets de leur utilisation
 
-Ensuite, vous n'avez pas à vous soucier de comment est créer l'object `Connection`, `Statement` ou encore `ResultSet`
+Ensuite, vous n'avez pas à vous soucier de comment est créé l'objet `Connection`, `Statement` ou encore `ResultSet`
 - --> construire des objets complexes sans que le client n'ait à se préoccuper des détails
 
 ### Créer un framework
@@ -149,11 +149,11 @@ Dans l'exemple sur les animaux, la création d'un nouvel animal n'était pas com
 
 Les lignes 677 à 699 sont très intéressantes :
 1. si vous n'avez que la dépendance Maven MySQl alors `registeredDrivers` contient un seul élément le DriverMySQL, si vous avez les dépendances MySQL et PostgreSQL alors le tableau contient les deux drivers
-2. Ensuite, ligne 683 via la méthode `Driver.connect()` il va essayé de se connecter en fonction de l'url `jdbc:mysql//localhost:...` ou `jdbc:postgres//localhost:...`
-   - s'il réussit il retourne la connexion construire via la Factory Driver.connect
+2. Ensuite, ligne 683 via la méthode `Driver.connect()` il va essayer de se connecter en fonction de l'url `jdbc:mysql//localhost:...` ou `jdbc:postgres//localhost:...`
+   - s'il réussit il retourne la connexion construite via la Factory Driver.connect
    - sinon il essaie avec le driver suivant
 
-=> Ceci permet de rajouter des SGBD qui seront automatiquement scanné sans avoir besoin de recoder une seule ligne de code 
+=> Ceci permet de rajouter des SGBD qui seront automatiquement scannés sans avoir besoin de recoder une seule ligne de code 
 
 -->
 

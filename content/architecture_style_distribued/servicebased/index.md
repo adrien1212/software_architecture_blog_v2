@@ -22,4 +22,4 @@ Cette architecture se compose :
 
 ![Service Based Architecture](images/servicebased.png)
 
-Les services représentent le coeur applicatif, étant donné que nous n'avons qu'une seule base de données nous limiterons le nombre de service de 4 à 12. Le principal problème viendra lorsqu'on va souhaiter changer l'architecture de notre base de données, l'ensemble des services seront impactés. Une solution consiste à faire du [Database Partitioning]({{% relref "database_partitioning.md" %}})
+Les services représentent le cœur applicatif. Étant donné que nous n'avons qu'une seule base de données, nous limiterons le nombre de services de 4 à 12. Le principal problème surviendra lorsque nous souhaiterons changer l'architecture de notre base de données : l'ensemble des services sera impacté. Une solution consiste à faire du [Database Partitioning]({{% relref "database_partitioning.md" %}})

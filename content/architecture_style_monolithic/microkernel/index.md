@@ -14,7 +14,7 @@ L'architecture microkernel permet à un développeur ou à un utilisateur final 
 Cette architecture vise à maintenir le noyau du système (kernel) aussi petit et simple que possible (micro), en déléguant la plupart des fonctionnalités à des processus tiers.
 
 ## Composition
-Une application microkernel se décompose en deux composants : le coeur applicatif et des plugins qui gravitent autour. Généralement le coeur applicatif contient les fonctionnalités minimales pour rendre le système opérationnel. 
+Une application microkernel se décompose en deux composants : le cœur applicatif et des plugins qui gravitent autour. Généralement le cœur applicatif contient les fonctionnalités minimales pour rendre le système opérationnel. 
 
 ![microkernel](https://www.oreilly.com/api/v2/epubs/9781098134280/files/assets/sap2_0401.png?width=30pc)
 
@@ -25,5 +25,5 @@ Les plugins devraient être indépendants les uns des autres (standalone), et ch
 
 
 ### Kernel
-Le coeur applicatif doit être capable de connaître l'ensemble des plugins disponibles (voir [communication]({{% relref "communication.md" %}}))
+Le cœur applicatif doit être capable de connaître l'ensemble des plugins disponibles (voir [la communication]({{% relref "communication.md" %}}))
 

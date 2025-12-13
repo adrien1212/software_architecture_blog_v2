@@ -20,6 +20,7 @@ Allow an application to equally be driven by users, programs, automated test or 
 
 C'est la caractéristique principale d'une architecture en Hexagonale
 
+![alt text](images/topcu.png)
 
 ## 1. Le coeur applicatif
 

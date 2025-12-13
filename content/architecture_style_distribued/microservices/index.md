@@ -19,7 +19,7 @@ elle a connu une popularité croissante et rapide au cours des dernières année
 Elle prend son inspiration du Domain-Driven Design (DDD), une approche conceptuelle et méthodologique du développement logiciel qui met l'accent sur la modélisation du domaine métier. Notamment de la notion centrale de _Bounded Context_.
 
 > [!danger] Définition
->  Des services qui communiquent entre eux via des *well-defined* interfaces.
+>  Des services qui communiquent entre eux via des interfaces bien définies (*well-defined interfaces*).
 
 Le style architectural des microservices est une approche qui consiste à développer une application unique sous la forme d'une suite de petits services, chacun s'exécutant dans son propre processus et communiquant à l'aide de mécanismes légers, souvent une API HTTP.
 

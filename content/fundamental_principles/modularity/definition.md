@@ -25,14 +25,14 @@ Un module n'est :
 ## Définir un module
 
 > [!danger] Définition
->  La modularité consiste à décrire un regroupement logique de code (_related grouping of_). Ce regroupement devient une unité logicielle déployable, manageable, réutilisable, composable et sans état (stateless) qui fournit une interface concise au client.
-
+>  La modularité consiste à décrire un regroupement logique de code (_related grouping of_). Ce regroupement devient une unité logicielle déployable, gérable (manageable), réutilisable, composable et sans état (stateless) qui fournit une interface concise au client.
+ 
 Un module, regroupe plusieurs packages qui collaborent pour fournir une fonctionnalité métier complète et cohérente. Par exemple, le module "Gestion des commandes" pourrait inclure les packages suivants :
 - `com.example.commandes.creation` (création de commandes)
 - `com.example.commandes.suivi` (suivi des commandes)
 - `com.example.commandes.historique` (historique des commandes).
 
-Puis chaque package peut être rediviser à sa guise, par exemple
+Puis chaque package peut être redivisé à sa guise, par exemple
 - `com.example.commandes.creation`
   - `com.example.commandes.creation.controller`
   - `com.example.commandes.creation.service`
@@ -68,14 +68,14 @@ Dans la section [Caractéristiques d'un module]({{< relref "fundamental_principl
 
 
 ## Lien avec l’architecture logicielle
-> L’architecture Logicielle à pour objectif de **minimiser l’impact et le coût du changement**. La modularité est un intermédiaire important pour augmenter l’agilité architecturale.
-
-En prenant en compte la modularité pour la création de nos architectures, nous maximisons les chances d'avoir un systèmes 
+> L’architecture Logicielle a pour objectif de **minimiser l’impact et le coût du changement**. La modularité est un intermédiaire important pour augmenter l’agilité architecturale.
+ 
+En prenant en compte la modularité pour la création de nos architectures, nous maximisons les chances d'avoir un système 
 - Facilement déployable
-- Manageable
+- Gérable (Manageable)
 - Testable
 - Réutilisable
-
-La modularité est ainsi au coeur de la conception des architecture. Lorsqu'on souhaite réaliser un logiciel avec une architecture [Microservices]({{< relref "architecture_style_distribued/microservices" >}}) ou [Modular Monolithique]({{< relref "modular_monolithic" >}}) la première chose à faire est de définir des [Bounded Context]({{< relref "basics_for_modeling/bounded_context/" >}}) afin d'avoir des services/modules faiblement couplés.
+ 
+La modularité est ainsi au cœur de la conception des architectures. Lorsqu'on souhaite réaliser un logiciel avec une architecture [Microservices]({{< relref "architecture_style_distribued/microservices" >}}) ou [Modular Monolithique]({{< relref "modular_monolithic" >}}) la première chose à faire est de définir des [Bounded Context]({{< relref "basics_for_modeling/bounded_context/" >}}) afin d'avoir des services/modules faiblement couplés.
 
 [^1]: (https://www.kamilgrzybek.com/blog/posts/modular-monolith-primer)

@@ -14,7 +14,7 @@ alwaysopen = false
 
 ## Objectif du découpage
 
-Le concept fondamental de l'architecture n-tiers est le _Separation of Concern_. Les composants d'une couche spécifique ne traitent que les informations spécifiques à cette couche. Par exemple, l’IHM ne sait pas comment les utilisateurs sont récupérés de la base de données.
+Le concept fondamental de l'architecture n-tier est le _Separation of Concerns_. Les composants d'une couche spécifique ne traitent que les informations spécifiques à cette couche. Par exemple, l'IHM ne sait pas comment les utilisateurs sont récupérés de la base de données.
 
 Ensuite, cette architecture permet d'avoir un code facilement testable et maintenable. En effet des changements effectués sur une couche n'impacteront pas les autres couches, le changement est _isolé_.
 
@@ -24,7 +24,7 @@ Ensuite, cette architecture permet d'avoir un code facilement testable et mainte
 
 > [!danger] Définition
 >  Les couches communiquent par le biais d'interfaces ou d'API bien définies, abstrayant les détails de la mise en œuvre de chaque couche.
-Pour éviter qu'une requête traverse toutes les couches [sinkhole antipattern]({{% relref "/architecture_antipattern/sinkhole_antipattern.md" %}}), nous appliquons de l'inversion de dépendances entre nos couches.
+Pour éviter qu'une requête traverse toutes les couches [sinkhole antipattern]({{% relref "/architecture_antipattern/sinkhole_antipattern.md" %}}), nous appliquons de l'inversion de dépendance entre nos couches.
 
 ![Alt text](images/n-tiers-detailled.png)
 
@@ -37,10 +37,10 @@ Chaque couche définit son contrat au travers d'interfaces.
 
 ![Alt text](images/ntiers-dto.png)
 
-En d'autre terme :
-
-- `A` est le DTO de requête (car il peut y avoir un DTO de réponse) entre la _présentation_ et la _business logic_. Le contrôler doit envoyer ses données sous le format `A`
-- `B` est le DTO de requête (car il peut y avoir un DTO de réponse) entre la _business logic_ et la _persistance_ Le Service doit envoyer ses données sous le format `B`
+En d'autres termes :
+ 
+ - `A` est le DTO de requête (car il peut y avoir un DTO de réponse) entre la _présentation_ et la _logique métier_. Le Controller doit envoyer ses données sous le format `A`
+ - `B` est le DTO de requête (car il peut y avoir un DTO de réponse) entre la _logique métier_ et la _persistance_. Le Service doit envoyer ses données sous le format `B`
 
 ## Layers of isolation
 

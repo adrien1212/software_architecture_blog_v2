@@ -10,23 +10,23 @@ weight = 98
 > - [ Hexagonal vs Clean vs Onion Architecture... It Doesn’t Matter - CodeOpinion](https://youtu.be/Thzz5bvUI40)
 
 ## Layered Architecture
-Traditionnellement, nous avons la Presentation qui connait et dépend du Business qui connait et dépend de la Persistance.
+Traditionnellement, nous avons la Presentation qui connait et dépend du Business, qui lui-même connait et dépend de la Persistance.
 
 ![layered](../images/layered.png?width=30pc)
 
-Mais que se passe-t-il si nous décidons d'inverser la dépendance entre la Logique métier et la Persistance ?
+Mais que se passe-t-il si nous décidons d'inverser la dépendance entre la Logique Métier et la Persistance ?
 
 ![layered with DI](../images/layered_di.png?width=30pc)
 
 - La partie Business appelle toujours la couche Data Access
-- Mais ne sait plus qui est appelé (fichier, base de données, in-memory, ?), la partie métier devient indépendante 
+- Mais ne sait plus qui est appelé (fichier, base de données, in-memory, ?). La partie métier devient indépendante. 
 
 ### Comment ?
 
 ![layered with DI](../images/layered_interface.png?width=30pc)
 
 Pour ce faire :
-- la partie Business (`Service`) dépend d'une interface (`IRepository`) qui est implémenté par la couche de Persistance (`Repository`)
+- la partie Business (`Service`) dépend d'une interface (`IRepository`) qui est implémentée par la couche de Persistance (`Repository`)
 - Et c'est en positionnant `IRepository` dans Business (et non dans Data Access) que nous inversons la dépendance
   ![Si repository](../images/di_irepo.png?width=30pc)
 
@@ -43,10 +43,10 @@ Nous avons la naissance du patron architectural Port/Adapter (ou Hexagonale). En
 
 ![Port Adapter - Hexa](../images/port_adapter2.png?width=30pc)
 
-Par conséquent, le **coeur applicatif n'a aucune dépendance**; aucune référence vers le monde externe
+Par conséquent, le **cœur applicatif n'a aucune dépendance**, aucune référence vers le monde externe.
 
 ## Onion
-Le coeur applicatif peut lui être divisé en différentes couches (layers) avec des dépendances qui ne pointent que vers l'intérieur
+Le cœur applicatif peut lui-même être divisé en différentes couches (layers) avec des dépendances qui ne pointent que vers l'intérieur.
 
 ![Onion](../images/onion.png?width=30pc)
 
@@ -54,11 +54,11 @@ Le coeur applicatif peut lui être divisé en différentes couches (layers) avec
 
 
 ## Clean Architecture
-La Clean Architecture reprend l'ensemble de ces idées pour y donner du sens. On va y nommer les couches
+La Clean Architecture reprend l'ensemble de ces idées pour les formaliser. Elle nomme les couches explicitement.
 
 ![Clean Architecture](../images/clean_architecture.png?width=30pc)
 
 
 ## Conclusion
 - Fondamentalement, l'architecture hexagonale (alias Ports/Adaptateurs) définit le cœur (logique métier) et la périphérie (services et composants externes) sans rien dire de la structure interne du cœur.
-- Ses descendants, les architectures Onion et Clean, entrent dans les détails de la structuration du coeur en le divisant en plusieurs couches, conformément aux principes DDD. 
+- Ses descendants, les architectures Onion et Clean, entrent dans les détails de la structuration du cœur en le divisant en plusieurs couches, conformément aux principes DDD. 

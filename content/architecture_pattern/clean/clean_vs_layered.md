@@ -11,7 +11,7 @@ La Clean Architecture est composée de plusieurs couches sur lesquelles on pouss
 
 ## Construction
 ### 1. Architecture Layered
-Nous repartons de l'architecture [Layered]({{% relref "layered" %}}) présentées. Elle permet d'avoir des couches logiques isolées.
+Nous repartons de l'architecture [Layered]({{% relref "layered" %}}) présentée. Elle permet d'avoir des couches logiques isolées.
 
 ![Layered](../images/layered-detailled.png)
 
@@ -24,11 +24,11 @@ Maintenant si on pousse le concept [d'inversion de dépendances]({{% relref "../
 
 ![Alt text](../images/layeredVSClean.png)
 
-Nous obtenons notre Clean Architecture. On notera l'utilisation du patron Adaptateur au lieu de patron Gateway mais le principe est exactement le même.
+Nous obtenons notre Clean Architecture. On notera l'utilisation du patron Adaptateur au lieu du patron Gateway mais le principe est exactement le même.
 
 ## Pourquoi l'invention de la Clean Architecture ?
 Alors me direz-vous, pourquoi donne-t-on un nom à quelque chose de si évident ? 
 
 > Appliquer une architecture layered sans avoir une inversion de dépendance n'a pas vraiment de sens ?
 
-Vous avez totalement raison, mais de nombreuses personnes n'arrivent pas à aller au delà de l'architecture Layered. En proposant ce nouveau nom Uncle Bob a mis en lumière l'importance de l'inversion de dépendances.
+Vous avez totalement raison, mais de nombreuses personnes n'arrivent pas à aller au-delà de l'architecture Layered. En proposant ce nouveau nom, Uncle Bob a mis en lumière l'importance de l'inversion de dépendances.

@@ -1,5 +1,5 @@
 +++
-title = "Domain Model Trilemma
+title = "Domain Model Trilemma"
 weight = 60
 +++
 

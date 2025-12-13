@@ -16,14 +16,14 @@ weight = 10
 Allow an application to equally be driven by users, programs, automated test or batch scripts, and to be developed and tested in isolation from its eventual run-time devices and databases.
 
 > [!danger] Définition
->  Le coeur de l'hexagone ne dépend de rien (ni d'Hibernate, ni de Spring).
+>  Le cœur de l'hexagone ne dépend de rien (ni d'Hibernate, ni de Spring).
 
 C'est la caractéristique principale d'une architecture Hexagonale
 
 
 ## 1. Le coeur applicatif
 
-Le coeur applicatif contient l'ensemble de la logique métier et est totalement indépendant de la _présentation_ ou de la _persistance_.
+Le cœur applicatif contient l'ensemble de la logique métier et est totalement indépendant de la _présentation_ ou de la _persistance_.
 
 ![Alt text](images/hexa1.png?width=15pc)
 
@@ -35,7 +35,7 @@ If we want to follow the [Single Responsibility Principle]({{< ref "single_respo
 
 > A driven port is an interface for a functionality, needed by the application for implementing the business logic. Such functionality is provided by a driven actor. So driven ports are the SPI (Service Provider Interface) required by the application. A driven port would be like a Required Interface.
 
-Néanmoins notre application a besoin de communiquer avec plusieurs librairies : base de données, email, etc ...
+Néanmoins, notre application a besoin de communiquer avec plusieurs bibliothèques : base de données, email, etc.
 Au lieu d'avoir une dépendance directe avec ce module tiers, on va utiliser un port/adaptateur.
 
 ![Alt text](images/hexa2.png?width=30pc)
@@ -47,14 +47,14 @@ Au lieu d'avoir une dépendance directe avec ce module tiers, on va utiliser un 
 ![Alt text](images/hexa3.png?width=40pc)
 
 > [!note] Note
->  Et quels que soient les changements effectués, seul l'adaptateur changera. Le coeur applicatif, lui, reste inchangé. On découple la logique interne avec l'utilisation de modules tiers.
+>  Et quels que soient les changements effectués, seul l'adaptateur changera. Le cœur applicatif, lui, reste inchangé. On découple la logique interne avec l'utilisation de modules tiers.
 
 ## 3. Communication entrante (Driver Port)
 
 > Driver Ports offer the application functionality to drivers of the outside world. Thus, driver ports are said to be the use case boundary of the application. They are the API of the application.
 
 On peut faire de même pour les communications entrantes, par exemple lorsque notre logique métier est appelée par une API.
-Pour ce faire, on va définir un contrat d'échange où on précise comment on souhaite recevoir les données (interface + DTO de requête) et quelles données nous renvoyons (DTO de réponse). Par conséquent, quel que soit l'appelant l'input et l'output seront toujours les mêmes.
+Pour ce faire, on va définir un contrat d'échange où l'on précise comment on souhaite recevoir les données (interface + DTO de requête) et quelles données nous renvoyons (DTO de réponse). Par conséquent, quel que soit l'appelant, l'input et l'output seront toujours les mêmes.
 
 ```java
 interface IService {

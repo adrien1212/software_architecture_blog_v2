@@ -21,17 +21,17 @@ weight = 15
 
 ### Componentization via Services
 
-Comme d'écrit [modularité]({{% relref "../../basics_for_modeling/module_vs_services.md" %}}), il y a deux moyens de réaliser de la modularité :
+Comme décrit dans [modularité]({{% relref "../../basics_for_modeling/module_vs_services.md" %}}), il y a deux moyens de réaliser de la modularité :
 
 - soit en créant des librairies
 - soit en créant des services
 
 L'architecture microservices utilisera la _Componentization via Services_ car utiliser des services permet :
 
-- d'avoir un déploiement indépendant des composants. Si on modifie un composant alors nous n'avons qu'à déployer ce composant, tandis que si nous utilisons des librairies nous devrions redéployer tous les composants ayant une dépendance vers la librairie mise à jour.
+- d'avoir un déploiement indépendant des composants. Si on modifie un composant alors nous n'avons qu'à déployer ce composant, tandis que si nous utilisons des bibliothèques nous devrions redéployer tous les composants ayant une dépendance vers la bibliothèque mise à jour.
 - chaque déploiement d'un microservice n'impactera les autres (_inflexible deployment_)
 - définition d'interface, lorsqu'on veut exposer notre service nous n'avons pas d'autre choix que de définir correctement nos APIs.
-- allocation de ressources (hardware) pour chaque service en fonction de ses besoins. Ceci n'étant pas possible si nous travaillons avec des librairies.
+- allocation de ressources (hardware) pour chaque service en fonction de ses besoins. Ceci n'étant pas possible si nous travaillons avec des bibliothèques.
 
 ### Organized around Business Capabilities
 
@@ -50,7 +50,7 @@ Avec une approche par microservices nous avons des équipes responsables d'un se
 
 La gestion de projet est également impactée avec l'approche microservice. On ne souhaite plus simplement délivrer du code qui marche puis l'équipe passe à autre chose mais créer un logiciel qui répond aux attentes.
 
-Chaque produit nécessite une forte relation avec le client et l'équipe prend la responsabilité du support du microservice après sa livraison. En soit on retrouve l'approche Agile dont Martin Fowler est l'un des signataire.
+Chaque produit nécessite une forte relation avec le client et l'équipe prend la responsabilité du support du microservice après sa livraison. En soi, on retrouve l'approche Agile dont Martin Fowler est l'un des signataires.
 
 > You build it, you run it
 
@@ -63,7 +63,7 @@ Un projet SOA classique se compose de deux attributs "compliqués" :
 
 Avec l'approche microservice, nous allons utiliser des _dumb pipes_ (i.e. des protocoles simples) :
 
-- HTTP protocole en exposant des REST API
+- protocole HTTP en exposant des API REST
 
 Chaque microservice expose ses API REST et communiquent entre eux via le protocole HTTP. Nous n'avons plus besoin d'ESB. Ainsi :
 
@@ -76,7 +76,7 @@ L'une des conséquences de la gouvernance centralisée est la tendance à la sta
 
 - quelle plateforme de développement
 - quelle base de données
-- comment les log sont créés
+- comment les logs sont créés
 - etc ...
 
 Avec une gouvernance décentralisée chaque équipe prend des décisions et est responsable de son service. Ceci est facilement possible grâce à la nature des microservices qui sont de couplage faible et leur communication standardisée.
@@ -106,7 +106,7 @@ En microservices, l'automatisation est essentielle car nous avons des cycles de 
 
 ### Design for failure
 
-Avec une architecture microservice nous avons beaucoup de process et de traffic réseau. Par conséquent nous pouvons avoir beaucoup d'erreurs, le code doit donc prendre en compte que des erreurs peuvent survenir et doit les gérer avec rigueur (logging et monitoring) :
+Avec une architecture microservice nous avons beaucoup de processus et de trafic réseau. Par conséquent nous pouvons avoir beaucoup d'erreurs, le code doit donc prendre en compte que des erreurs peuvent survenir et doit les gérer avec rigueur (logging et monitoring) :
 
 ### Evolutionary Design
 
@@ -121,5 +121,5 @@ Les microservices sont un style architectural qui structure une application comm
 - Utilisent des protocoles standards
 - Déployables de manière indépendante
 - Faiblement couplés
-- Facilement maintenable et testable
-- Maintenu par une petite équipe
+- Facilement maintenables et testables
+- Maintenus par une petite équipe

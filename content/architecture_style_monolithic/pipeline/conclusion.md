@@ -1,7 +1,7 @@
 +++
 draft = "true"
 title = "Conclusion"
-weigth = 10
+weight = 10
 +++
 
 ## Avantages

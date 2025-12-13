@@ -12,11 +12,11 @@ weight = 30
 > [!danger] Définition
 >  Un changement de règle en base de données peut impacter l'ensemble des services
 
-Dans une architecture base de données traditionnelle nous avons un *schéma* qui contient un ensemble de *tables* et nous avons des *Entités Java* qui représentent ces tables sous la forme de code Java (e.g. JPAEntity) et ces entités sont regroupées dans une librairie à part qui est partagée entre les différents services (ici `db_model.jar`).
+Dans une architecture base de données traditionnelle nous avons un *schéma* qui contient un ensemble de *tables* et nous avons des *Entités Java* qui représentent ces tables sous la forme de code Java (e.g. JPAEntity) et ces entités sont regroupées dans une bibliothèque à part qui est partagée entre les différents services (ici `db_model.jar`).
 
 ![DB partitioning](../images/db_partitioning1.png)
 
-Mais un changement des règles dans le schéma de la base de données entraînera une mise à jour de `db_model.jar` donc tous les services se retrouvent impactés. Pour éviter ceci, il faut que chaque service partage son `jar`. 
+Mais un changement des règles dans le schéma de la base de données entraînera une mise à jour de `db_model.jar`. Donc tous les services s'en retrouvent impactés. Pour éviter ceci, il faut que chaque service partage son `jar`. 
 
 ## Une solution
 

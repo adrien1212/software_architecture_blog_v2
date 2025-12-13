@@ -17,10 +17,10 @@ weight = 20
 >  [^1]: https://collaboration.opengroup.org/projects/soa-book/pages.php?action=show&ggid=1314
 
 > [!danger] Définition
->  Le SOA sépare les fonctions en unités distinctes (i.e. services), que les développeurs rendent accessibles sur un réseau afin de permettre aux utilisateurs de les combiner et de les réutiliser dans la production d'applications.
+>  La SOA sépare les fonctions en unités distinctes (i.e. services), que les développeurs rendent accessibles sur un réseau afin de permettre aux utilisateurs de les combiner et de les réutiliser dans la production d'applications.
 
 Un service :
-- Est une représentation logique d'une activité commerciale reproductible ayant un résultat précis (e.g. vérifier le crédit d'un client, fournir des données météorologiques, consolider les rapports de forage).
+- Est une représentation logique d'une activité métier reproductible ayant un résultat précis (e.g. vérifier le crédit d'un client, fournir des données météorologiques, consolider les rapports de forage).
 - Est autonome
 - Peut être composé d'autres services
 - Est une "boîte noire" pour les consommateurs du service.
@@ -38,13 +38,13 @@ Chaque service dans une SOA inclut des documents descriptifs qui indiquent la fo
 
 ### Couplage faible
 
-Les services d'une SOA doivent être couplés de manière faible et dépendre aussi peu que possible des sources externes comme les modèles de données ou les systèmes d'informations. Ils doivent également être sans état et ne retenir aucune information des sessions ou des transactions passées. Ainsi, si vous modifiez un service, cela n'affectera pas de manière significative les applications client et les autres services qui l'utilisent.
+Les services d'une SOA doivent être couplés de manière faible et dépendre aussi peu que possible des sources externes comme les modèles de données ou les systèmes d'information. Ils doivent également être sans état et ne retenir aucune information des sessions ou des transactions passées. Ainsi, si vous modifiez un service, cela n'affectera pas de manière significative les applications client et les autres services qui l'utilisent.
 
-### Service abstraction principle
+### Principe d'abstraction du service
 
 Les clients ou les utilisateurs de service d'une SOA ne doivent pas connaître la logique de code ou les détails de mise en œuvre du service. Ils doivent considérer les services comme une boîte noire. Les clients obtiennent les informations nécessaires relatives à la fonction et à l'utilisation du service via des contrats de service et autres documents de description du service.
 
-### Service granularity principle
+### Principe de granularité du service
 
 Les services d'une SOA doivent avoir une taille et une portée appropriées, l'idéal étant de regrouper une fonction
 métier individuelle par service. Ensuite, les développeurs peuvent utiliser plusieurs services pour créer un service composite destiné à réaliser des opérations complexes.

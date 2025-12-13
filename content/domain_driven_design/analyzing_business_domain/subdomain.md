@@ -18,14 +18,14 @@ weight = 20
 
 ### 1. Core subdomain
 
-> Core subdomain est ce qui donne un avantage compétitif à une entreprise. Ce qui la différencie de ses concurrents
+> Le Core subdomain est ce qui donne un avantage compétitif à une entreprise. Ce qui la différencie de ses concurrents
 
 - Il n'est pas facilement copiable (c/c) par une autre entreprise
 - Il est complexe et change souvent
 
 ### 2. Generic subdomain
 
-> Generic subdomains sont les choses que toutes les entreprises font
+> Les Generic subdomains sont les choses que toutes les entreprises font
 
 - Peuvent être complexes à mettre en oeuvre mais n'offrent pas un avantage compétitif
 - Par exemple, la plupart des systèmes ont besoin d'authentifier et d'autoriser leurs utilisateurs. Au lieu d'inventer son propre mécanisme d'authentification, il est plus judicieux d'utiliser une solution existante.
@@ -35,7 +35,7 @@ weight = 20
 > Soutiennent le business de l'entreprise, mais n'offrent pas un avantage compétitif (core subdomain)
 
 - Ces *supporting subdomains* sont souvent très simples et s’apparentent à des CRUD ou ETL.
-- Par exemple on stocke les documents dans une base MongoDB, on va créer une simple API CRUD permettant de faciliter l’échange des core-subdomain avec MongoDB en optimisant la taille des fichiers
+- Par exemple, on stocke les documents dans une base MongoDB, on va créer une simple API CRUD permettant de faciliter l’échange des core-subdomain avec MongoDB en optimisant la taille des fichiers
 
 ### Comparaison
 ![comparing subdomain](domain_driven_design/analyzing_business_domain/images/comparing_types_subdomain.png)

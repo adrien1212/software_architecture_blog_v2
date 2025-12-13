@@ -10,7 +10,7 @@ weight = 40
 
 > **A Service in the domain is a stateless operation that fulfills a domain-specific task. Often the best indication that you should create a Service in the domain model is when the operation you need to perform feels out of place as a method on an Aggregate or a Value Object.** To alleviate that uncomfortable feeling, our natural tendency might be to create a static method on the class of an Aggregate Root. However, when using DDD, that tactic is a code smell that likely indicates you need a Service instead. [^1]
 
-Nous avons déjà évoqué la notion de [Service]({{< relref "fundamental_principles/service/index" >}}) au sens SOA/Microservice. Mais aucune de ces notions correspond au *Domain Service*.
+Nous avons déjà évoqué la notion de [Service]({{< relref "fundamental_principles/service/index" >}}) au sens SOA/Microservice. Mais aucune de ces notions ne correspond au *Domain Service*.
 
 > Just because a Domain Service has the word service in its name does not mean that it is required to be a coarse-grained, remote-capable, heavyweight transactional operation
 
@@ -36,7 +36,7 @@ public final class TransferDomainService {
     }
 
     // Application des invariants métier via les agrégats. 
-    // Dans débit() nous vérifier que "balance - amount > 0" sinon Exception "Fond insuffisant"
+    // Dans débit() nous vérifions que "balance - amount > 0" sinon Exception "Fonds insuffisants"
     from.debit(amount, "transfer-out:" + to.id()); 
     to.credit(amount, "transfer-in:" + from.id());
   }
@@ -72,6 +72,6 @@ public final class TransferDomainService {
 }
 ```
 
-Le Domain Service doit orchestrer les interactions entre les Aggregates, non porter toute la logique métier. Les invariants et les règles de cohérence doivent demeurer dans les entités du domaine, afin de préserver un modèle riche et cohérent.
+Le Domain Service doit orchestrer les interactions entre les Aggregates, et non porter toute la logique métier. Les invariants et les règles de cohérence doivent demeurer dans les entités du domaine, afin de préserver un modèle riche et cohérent.
 
 [^1]: Implementing DDD (Red Book)
