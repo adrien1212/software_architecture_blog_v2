@@ -6,6 +6,10 @@ weight = 70
 > [!ressource] Ressource
 > - [DDD Decoded - Don't Fear Eventual Consistency](https://blog.sapiensworks.com/post/2016/07/23/DDD-Eventual-Consistency)
 > - [Dealing with Eventual Consistency, and Causal Consistency using Predictable Identifiers](https://www.architecture-weekly.com/p/dealing-with-eventual-consistency)
+> - [ Eventual Consistency: Good, Bad, and a HUGE Mistake - CodeOpinion](https://www.youtube.com/watch?v=_lyPYG1hdtE)
+
+> [!warning] Attention à la traduction
+> **L'Eventual Consistancy se traduit par *Cohérence Finale*** car, à la fin de la saga, les données SONT cohérentes entre elles, soit parce que tout s'est bien passé, soit parce qu'il y a eu compensation afin de maintenir, in fine, lesdites données
 
 > Remember that we try to identify aggregates i.e we're actively looking for areas, **islands that need to be immediately consistent in an ocean of eventual consistency**. [...] And maybe that's one of the biggest things with DDD, the revelation that a model doesn't really need to always be immediately consistent, like in the CRUD approach; some parts need it, others don't. [^1]
 
