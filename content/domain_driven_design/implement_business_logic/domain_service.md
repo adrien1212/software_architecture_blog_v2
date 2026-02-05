@@ -4,7 +4,7 @@ weight = 40
 +++
 
 > [!ressource] Ressource
-> 
+> - [Services in Domain-Driven Design (DDD)](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/)
 
 ## Quand coder un Service ?
 
