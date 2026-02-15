@@ -5,6 +5,7 @@ weight = 40
 
 > [!ressource] Ressource
 > - [Services in Domain-Driven Design (DDD)](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/)
+> - [Services in Domain-Driven Design (un autre article)](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)
 
 ## Quand coder un Service ?
 
