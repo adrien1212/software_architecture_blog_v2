@@ -98,3 +98,78 @@ public class DepositMoneyUseCase {
     }
 }
 ```
+
+## Est-ce domain logic ou application service
+> A challenging activity for many DDD practitioners is drawing the line between application logic
+and domain logic. - Patterns, Principles, and Practices of Domain-Driven Design p700
+
+Exemple : Lorsqu’un client parraine un ami, les deux reçoivent un bon d’achat de 10€ et le parrain gagne des points de fidélité.
+
+Ce service ne contient pas la logique métier, il coordonne les objets du domaine.
+```java
+public class ReferralApplicationService {
+
+    private final CustomerRepository customerRepository;
+    private final ReferralPolicy referralPolicy;
+    private final Logger logger;
+
+    public void referFriend(CustomerId referrerId, CustomerRegistration friendDetails) {
+
+        try {
+
+            // récupérer le parrain
+            Customer referrer = customerRepository.findById(referrerId);
+
+            // créer le nouveau client
+            Customer friend = customerRepository.add(friendDetails);
+
+            // appliquer la règle métier
+            referralPolicy.apply(referrer, friend);
+
+            logger.info("Parrainage effectué avec succès");
+
+        } catch (Exception e) {
+            logger.error("Erreur lors du parrainage", e);
+        }
+    }
+}
+```
+
+La vraie règle métier se trouve ici, dans le Domain Service.
+
+```java
+public class ReferralPolicy {
+
+    public void apply(Customer referrer, Customer friend) {
+
+        // règle métier
+        referrer.addLoyaltyPoints(100);
+
+        referrer.addVoucher(new Money(10));
+        friend.addVoucher(new Money(10));
+
+        referrer.promoteToGoldIfEligible();
+    }
+}
+```
+
+On peut reconnaître une fuite de logique métier, si par exemple l'application service ferait ceci 
+```java
+referrer.addVoucher(10);
+friend.addVoucher(10);
+referrer.addLoyaltyPoints(100);
+referrer.promoteToGoldIfEligible();
+```
+
+Egalement on peut se poser les questions suivantes
+- “Est-ce que ces étapes doivent toujours se produire ensemble ?”
+- “Ces étapes sont-elles inséparables ?”
+
+=> Si oui, alors c'est une règle métier. Donc cela doit vivre dans le domaine (souvent un Domain Service ou une Policy)
+
+Quand un parrainage est validé :
+- le parrain reçoit des points
+- les deux reçoivent un bon
+- le statut peut évoluer
+
+=> Ces actions sont indissociables.
