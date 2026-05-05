@@ -13,7 +13,7 @@ isBoldTitle = true
 > - [An Introduction to Domain Driven Design](https://www.methodsandtools.com/archive/archive.php?id=97)
 > - [DDD Sample](https://dddsample.sourceforge.net/characterization.html)
 > - [Serie d'article sur les concepts du DDD](https://blog.sapiensworks.com/tags.html)
-
+> - [Ensemble d'articles de CodeOpinion](https://codeopinion.com/category/domain-driven-design/)
 
 
 > [!ressource] Projets Github
