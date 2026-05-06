@@ -8,6 +8,7 @@ weight = 98
 > - [Hexagonal, Onion & Clean Architecture](https://youtu.be/JubdZIdLQ4M)
 > - [Onion Architecture vs Clean Architecture Comparison](https://youtu.be/KqWNtCpjUi8?si=JJjJWEc5dalKlWSc)
 > - [ Hexagonal vs Clean vs Onion Architecture... It Doesn’t Matter - CodeOpinion](https://youtu.be/Thzz5bvUI40)
+> - [Les effets indésirables de nos Clean Archis](https://youtu.be/tZMPOnE2fSE)
 
 ## Layered Architecture
 Traditionnellement, nous avons la Presentation qui connait et dépend du Business, qui lui-même connait et dépend de la Persistance.
