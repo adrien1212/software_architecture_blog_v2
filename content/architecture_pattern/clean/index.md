@@ -16,6 +16,11 @@ Elle rend les systèmes logiciels maintenables, évolutifs et testables en isola
 
 ![Alt text](images/clean.png?width=40pc)
 
+## 4 patterns derrière la Clean Architecture
+> [!ressource] Ressource
+> - [Les effets indésirables de nos Clean Archis  12:50](https://youtu.be/tZMPOnE2fSE)
+
+
 ## Composition
 
 ### Entités
